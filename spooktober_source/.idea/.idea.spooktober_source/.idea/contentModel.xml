@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\NRC-PC\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\NRC-PC\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_spooktober_source.-994152911.00" t="ExcludeRecursive" />
+    <e p="F:\spooktober21\spooktober_source" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scenes" t="Include">
+          <e p="nrcbobo" t="Include">
+            <e p="RoomLoader.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="spooktober_source.sln" t="IncludeFlat" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
