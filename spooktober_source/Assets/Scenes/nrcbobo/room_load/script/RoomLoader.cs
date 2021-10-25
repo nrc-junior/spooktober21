@@ -59,7 +59,7 @@ public class RoomLoader : MonoBehaviour {
         int i = 0;
         foreach (Material mat in on_materials) {
             render_types[i++] = mat.GetTag("RenderType",true);
-            ChangeRenderMode(mat,BlendMode.Transparent);
+            ChangeRenderMode(mat,BlendMode.Fade);
         }
 
         float stop = 1;
@@ -73,7 +73,7 @@ public class RoomLoader : MonoBehaviour {
                 }
             } 
             stop -= 0.1f;
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.01f);
         }
         
         i = 0;
@@ -94,7 +94,7 @@ public class RoomLoader : MonoBehaviour {
         
         foreach (Material mat in enter_materials) {
             render_types[i++] = mat.GetTag("RenderType",true);
-            ChangeRenderMode(mat,BlendMode.Transparent);
+            ChangeRenderMode(mat,BlendMode.Fade);
             Color x = mat.GetColor("_Color");
             x.a = 0;
             mat.color = x;
@@ -110,7 +110,7 @@ public class RoomLoader : MonoBehaviour {
                 }
             } 
             stop += 0.1f;
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.01f);
         }
 
         i = 0;
