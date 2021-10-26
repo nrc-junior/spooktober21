@@ -2,21 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class moviment : MonoBehaviour
+public class movement : MonoBehaviour
 {
     public float Speed = 10f;
     public Rigidbody rb;
-    Vector3 movement;
+    Vector3 mov;
     
     //usar o rigidbody 3d para o vector3
 
     void Update(){
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = 0f;
-        movement.z = Input.GetAxisRaw("Vertical");
+        mov.x = Input.GetAxisRaw("Horizontal");
+        mov.y = 0f;
+        mov.z = Input.GetAxisRaw("Vertical");
     }
 
     void FixedUpdate(){
-        rb.MovePosition(rb.position + movement * Speed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + mov * Speed * Time.fixedDeltaTime);
     }
 }
