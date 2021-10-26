@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ComputerDesktop : MonoBehaviour {
     public ComputerWindowOptions window_options;
+    public Sprite interneton; 
+    public Sprite internetoff;
     
     public void StartGame(Minigame mg) {
         window_options.gameObject.SetActive(true);

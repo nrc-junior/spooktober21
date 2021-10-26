@@ -21,18 +21,18 @@ public class RoomLoader : MonoBehaviour {
         
         int mat_space = 0;
         for (int i = 0; i < sz; i++) {
-            Material newMat = transform.GetChild(i).GetComponent<MeshRenderer>().material;
-
+            MeshRenderer e = null;
+            transform.GetChild(i).TryGetComponent<MeshRenderer>(out e);
+            if (e == null) continue;
+            Material newMat = e.material;
+            
             bool repeat = false;
             foreach (Material save_mat  in array){
                 repeat =   newMat == save_mat;
                 if(repeat) break;
             }
             
-            if (repeat) {
-                Debug.Log("textura repetida" + newMat.name);
-            } else {
-                Debug.Log("textura add" + newMat.name);
+            if (!repeat) {
                 array[mat_space++] = newMat;
             }
         }
