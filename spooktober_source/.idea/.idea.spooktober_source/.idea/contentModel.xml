@@ -8,6 +8,15 @@
       <e p="Assets" t="Include">
         <e p="movement.cs" t="Include" />
         <e p="Scenes" t="Include">
+          <e p="Menu" t="Include">
+            <e p="effects" t="Include">
+              <e p="Art" t="Include">
+                <e p="IntroDelete.cs" t="Include" />
+                <e p="UiAnimation.cs" t="Include" />
+              </e>
+              <e p="Menu.cs" t="Include" />
+            </e>
+          </e>
           <e p="nrcbobo" t="Include">
             <e p="computer" t="Include">
               <e p="ComputerApp.cs" t="Include" />

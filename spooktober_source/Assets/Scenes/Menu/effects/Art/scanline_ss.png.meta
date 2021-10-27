@@ -1,0 +1,1542 @@
+fileFormatVersion: 2
+guid: dd447533bdbf43a48b8c1fea57abf78f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5343614879651798032
+    second: scanline_ss_0
+  - first:
+      213: 954449323110427212
+    second: scanline_ss_1
+  - first:
+      213: -2769648261799968742
+    second: scanline_ss_2
+  - first:
+      213: -8681677430696873744
+    second: scanline_ss_3
+  - first:
+      213: -3729094324940915169
+    second: scanline_ss_4
+  - first:
+      213: -3243480112756605793
+    second: scanline_ss_5
+  - first:
+      213: -7015762098510573333
+    second: scanline_ss_6
+  - first:
+      213: 3257581439521876195
+    second: scanline_ss_7
+  - first:
+      213: -6728867083603185884
+    second: scanline_ss_8
+  - first:
+      213: 4826982622766111206
+    second: scanline_ss_9
+  - first:
+      213: 8114429075343776297
+    second: scanline_ss_10
+  - first:
+      213: -4730939143923214311
+    second: scanline_ss_11
+  - first:
+      213: 8661316461784395812
+    second: scanline_ss_12
+  - first:
+      213: -7986881841505450677
+    second: scanline_ss_13
+  - first:
+      213: 19137905649698955
+    second: scanline_ss_14
+  - first:
+      213: 5308377155003786043
+    second: scanline_ss_15
+  - first:
+      213: 4628174861132371699
+    second: scanline_ss_16
+  - first:
+      213: -545828622669346338
+    second: scanline_ss_17
+  - first:
+      213: -191164908210187111
+    second: scanline_ss_18
+  - first:
+      213: 8569608187665811580
+    second: scanline_ss_19
+  - first:
+      213: 7756710719405237975
+    second: scanline_ss_20
+  - first:
+      213: -2393386532505574781
+    second: scanline_ss_21
+  - first:
+      213: 3900758855022119936
+    second: scanline_ss_22
+  - first:
+      213: -5313853943859364574
+    second: scanline_ss_23
+  - first:
+      213: -673754185381844625
+    second: scanline_ss_24
+  - first:
+      213: -7770553531576977336
+    second: scanline_ss_25
+  - first:
+      213: -926574676328013750
+    second: scanline_ss_26
+  - first:
+      213: 3875966697723464794
+    second: scanline_ss_27
+  - first:
+      213: 2432949801311172040
+    second: scanline_ss_28
+  - first:
+      213: -7229288272714721401
+    second: scanline_ss_29
+  - first:
+      213: 907900265415126451
+    second: scanline_ss_30
+  - first:
+      213: -8001202450658912727
+    second: scanline_ss_31
+  - first:
+      213: -4452117296060199428
+    second: scanline_ss_32
+  - first:
+      213: -8426246914121905829
+    second: scanline_ss_33
+  - first:
+      213: -7753600393181295449
+    second: scanline_ss_34
+  - first:
+      213: -4709266392922005960
+    second: scanline_ss_35
+  - first:
+      213: -5377134592458438455
+    second: scanline_ss_36
+  - first:
+      213: -1005366158592453283
+    second: scanline_ss_37
+  - first:
+      213: -5561557983277438184
+    second: scanline_ss_38
+  - first:
+      213: 5782420347545865822
+    second: scanline_ss_39
+  - first:
+      213: -8400748657638450269
+    second: scanline_ss_40
+  - first:
+      213: 3431117064848895630
+    second: scanline_ss_41
+  - first:
+      213: 5713950922336060575
+    second: scanline_ss_42
+  - first:
+      213: 4760665443484872340
+    second: scanline_ss_43
+  - first:
+      213: 2352877308731124939
+    second: scanline_ss_44
+  - first:
+      213: -7259855035543657991
+    second: scanline_ss_45
+  - first:
+      213: 2957915109041771523
+    second: scanline_ss_46
+  - first:
+      213: 5871224454003988486
+    second: scanline_ss_47
+  - first:
+      213: 2824983824796642056
+    second: scanline_ss_48
+  - first:
+      213: -399624395005524785
+    second: scanline_ss_49
+  - first:
+      213: -8329617563552533353
+    second: scanline_ss_50
+  - first:
+      213: 5417905231806714851
+    second: scanline_ss_51
+  - first:
+      213: 7077411271715681014
+    second: scanline_ss_52
+  - first:
+      213: -8150937265849744439
+    second: scanline_ss_53
+  - first:
+      213: -8389036080429529122
+    second: scanline_ss_54
+  - first:
+      213: 4358151313717713829
+    second: scanline_ss_55
+  - first:
+      213: -181453304265586656
+    second: scanline_ss_56
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 1
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 1
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 1
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 4096
+    resizeAlgorithm: 1
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: scanline_ss_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2601
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c132edb65582a40800000000000000
+      internalID: 5343614879651798032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_1
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 2601
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4aeb1c3a92ee3d00800000000000000
+      internalID: 954449323110427212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_2
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 2601
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1082a2849b3099d0800000000000000
+      internalID: -2769648261799968742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2501
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f079c0df5c748780800000000000000
+      internalID: -8681677430696873744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_4
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 2501
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1eb8f318789f3cc0800000000000000
+      internalID: -3729094324940915169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_5
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 2501
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c391ba508dcf2d0800000000000000
+      internalID: -3243480112756605793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2401
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be0d0a1ea8103ae90800000000000000
+      internalID: -7015762098510573333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_7
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 2401
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e86b915f01453d20800000000000000
+      internalID: 3257581439521876195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_8
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 2401
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42f630dd9034e92a0800000000000000
+      internalID: -6728867083603185884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2301
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e915f6fe13ecf240800000000000000
+      internalID: 4826982622766111206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_10
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 2301
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a97fe704e3c9070800000000000000
+      internalID: 8114429075343776297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_11
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 2301
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91857780ae3585eb0800000000000000
+      internalID: -4730939143923214311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2201
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 420f6efae6d233870800000000000000
+      internalID: 8661316461784395812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_13
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 2201
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b45cc0e0845e82190800000000000000
+      internalID: -7986881841505450677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_14
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 2201
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b88cef3e2ddf34000800000000000000
+      internalID: 19137905649698955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2101
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b33acc1c5e42ba940800000000000000
+      internalID: 5308377155003786043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_16
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 2101
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f6103cd3849a3040800000000000000
+      internalID: 4628174861132371699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2001
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9949c906788d85df0800000000000000
+      internalID: -191164908210187111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_19
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 2001
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7889123e3d5de670800000000000000
+      internalID: 8569608187665811580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_21
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1901
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3822dcf11abf8ced0800000000000000
+      internalID: -2393386532505574781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_22
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 1901
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c8d04f287422630800000000000000
+      internalID: 3900758855022119936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1801
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69e16a532856a6f0800000000000000
+      internalID: -673754185381844625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_25
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 1801
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8487232bbb2792490800000000000000
+      internalID: -7770553531576977336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_27
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1701
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c0d030d233ac530800000000000000
+      internalID: 3875966697723464794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_28
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 1701
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c5728734f293c120800000000000000
+      internalID: 2432949801311172040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_30
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1601
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd2d8b2b72899c00800000000000000
+      internalID: 907900265415126451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_31
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 1601
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9269d7863c406f090800000000000000
+      internalID: -8001202450658912727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_33
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1501
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5948066315ff0b80800000000000000
+      internalID: -8426246914121905829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_34
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 1501
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac8912d58da56490800000000000000
+      internalID: -7753600393181295449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_36
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1401
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c8cc03d3949065b0800000000000000
+      internalID: -5377134592458438455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_37
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 1401
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d55d5ef2ec83c02f0800000000000000
+      internalID: -1005366158592453283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_39
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1301
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e46756ba84f3050800000000000000
+      internalID: 5782420347545865822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_40
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 1301
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3abde1eda9b8a6b80800000000000000
+      internalID: -8400748657638450269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_42
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1201
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f944bdd07180c4f40800000000000000
+      internalID: 5713950922336060575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_43
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 1201
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49ea46d6ff7411240800000000000000
+      internalID: 4760665443484872340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_45
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1101
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f1e69d3f40df3b90800000000000000
+      internalID: -7259855035543657991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_46
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 1101
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3041236be10ac0920800000000000000
+      internalID: 2957915109041771523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_48
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1001
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b6a3d32db543720800000000000000
+      internalID: 2824983824796642056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_49
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 1001
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc48d14eabf347af0800000000000000
+      internalID: -399624395005524785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_51
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 901
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e3d1906a14403b40800000000000000
+      internalID: 5417905231806714851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_52
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 901
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f275fbcd04083260800000000000000
+      internalID: 7077411271715681014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_54
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 801
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed70012c128249b80800000000000000
+      internalID: -8389036080429529122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_55
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 801
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5abdb8387834b7c30800000000000000
+      internalID: 4358151313717713829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_57
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 701
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3986112b784231120800000000000000
+      internalID: 2383288793035794579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_58
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 701
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e28dfa252741e70800000000000000
+      internalID: 9085012047776198217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_60
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 601
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f5c0f26986b56980800000000000000
+      internalID: -8546224016678926860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_61
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 601
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ab9b20fc32127e0800000000000000
+      internalID: -1792111804705817984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_63
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 501
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef226434737e8950800000000000000
+      internalID: 6453222259000750050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_64
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 501
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169978c495ebf20b0800000000000000
+      internalID: -5751168908383512223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_66
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 401
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f7d8796971216100800000000000000
+      internalID: 99397472123148280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_67
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 401
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fefcd5054ce4e25e0800000000000000
+      internalID: -1932520585026482193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_69
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 301
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c29760a90acf16700800000000000000
+      internalID: 531983997715511596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_70
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 301
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7fa8412fe83dc80800000000000000
+      internalID: -8299132517935810644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_72
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 201
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8733892d64310f40800000000000000
+      internalID: 5692889047425562508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_73
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 201
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 150c58e048d4753f0800000000000000
+      internalID: -912175169944567727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_75
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 101
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd8ad36defafd4550800000000000000
+      internalID: 6146845038853597407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_76
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 101
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 595d19173451a53d0800000000000000
+      internalID: -3217235604390423147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_78
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974bd8f9ebf8153f0800000000000000
+      internalID: -913791200496077703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scanline_ss_79
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 1
+        width: 1280
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad6e597a88d60b60800000000000000
+      internalID: 7712089501171871146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 9aa5f33ed6513104fbecf5b377838de7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
