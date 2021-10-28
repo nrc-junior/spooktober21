@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ComputerWindowOptions : MonoBehaviour {
-	public Minigame minigame;
+	[HideInInspector] public Minigame minigame;
 	GameObject disabled_desktop;
 	
 	public void SetMinigame(Minigame mg, GameObject dd) {
