@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ComputerApp : MonoBehaviour {
-    public Minigame mg; 
     Transform parent;
     ComputerDesktop desktop;
     
@@ -12,14 +11,17 @@ public class ComputerApp : MonoBehaviour {
     }
 
     
-    public void LoadGame() {
+    public void LoadGame(Minigame mg) {
+	    
 	    if (mg.completed) {
 		    desktop.Crash(mg.app_name);
 			return;
+	    }else if (!desktop.connection) {
+		    desktop.noConnection();
 	    }
 		
-	    parent.gameObject.SetActive(false);
-	    desktop.StartGame(mg);
-	    mg.Launch();
+	    //parent.gameObject.SetActive(false);
+	    //desktop.StartGame(mg);
+	    //mg.Launch();
     }
 }
