@@ -8,10 +8,9 @@ public class SlideController : MonoBehaviour
 {
     public bool _working = true;
     [SerializeField] private Slider _slider;
-    [SerializeField] private TextMeshProUGUI _sliderTextClick;
-    [SerializeField] private TextMeshProUGUI _sliderText;
+    [SerializeField] private TextMeshProUGUI _pointText;
     [SerializeField] private Image _ZoneImage;
-    [HideInInspector] public int cicloAtual = 0;
+    [HideInInspector] public int pontos = 0;
     private int totalPlantas = 1;
     public int speed;
     public Transform testeParent;
@@ -22,12 +21,11 @@ public class SlideController : MonoBehaviour
     private float _sliderValue;
     public Animator anim;
     private List<Image> plants = new List<Image>();
-
+    private Animator animPlant;
     void Start()
     {
-        CreatePlant();
+        CreatePlant(1);
         _slider.onValueChanged.AddListener((v) =>{
-            _sliderText.text = v.ToString("0.00");
             _sliderValue = v;
         });
         StartCoroutine(UpdateSlider());
@@ -38,14 +36,15 @@ public class SlideController : MonoBehaviour
     {
         if((Input.GetKeyDown("space") || Input.GetKeyDown("e")) && !runningAnimation)
             {
-                _sliderTextClick.text = _sliderValue.ToString("0.00");
                 StartCoroutine(ClickedOnTime(_sliderValue));
             }
     }
 
     IEnumerator MyTime(){
-        while(_working){
-            if(runningAnimation){
+        while(_working)
+        {
+            if(runningAnimation)
+            {
                 yield return new WaitForSeconds(1.3f);
                 runningAnimation = false;
             }
@@ -67,24 +66,28 @@ public class SlideController : MonoBehaviour
     {
         runningAnimation = true;
         anim.Play("cavando");
-        // anim.SetBool("cavando",true);
         yield return new WaitForSeconds(1.3f);
+        
         print("Contage tamanho: " +plants.Count);
-        foreach(Image plant in plants)
+        foreach(var plant in plants)
         {   
             _correctClickZone = plant.rectTransform.anchoredPosition[0] / 3.625f;
             print("Clickzone: "+ _correctClickZone);
-            // print("Clicktime: "+ clickTime);
             if(clickTime >= _correctClickZone-10f && clickTime <= _correctClickZone+10f)
             {
-                _sliderTextClick.text = "Ganhou " + clickTime;
                 print($"clicou {clickTime} | certo {_correctClickZone} | GANHOU");
                 totalPlantas+=1;
+                pontos +=1;
+                _pointText.text = pontos.ToString();
                 RemovePlant(plant);
-                CreatePlant();
+                ControlNumberOfPlants();
+            }
+            else
+            {
+                print($"clicou {clickTime} | certo {_correctClickZone} | ERROU");
             }
         }
-        // anim.SetBool("cavando",false);
+
         runningAnimation = false;
     }
 
@@ -95,16 +98,17 @@ public class SlideController : MonoBehaviour
         return (xRandom  * 3.625f, _ZoneImage.rectTransform.anchoredPosition[1]);
     }
 
-    private void CreatePlant()
+    private void CreatePlant(int quantity)
     {
-        for (int i=0; i<2; i++)
+        for (int i=0; i<quantity; i++)
         {
             var newObj = GameObject.Instantiate(_ZoneImage);
             newObj.transform.SetParent(testeParent, false);
             var cords = PositionPlant();
             newObj.rectTransform.anchoredPosition = new Vector2(cords.Item1, cords.Item2);
+            animPlant = newObj.GetComponent<Animator>();
+            animPlant.SetInteger("animacao", Random.Range(1,4));
             plants.Add(newObj);
-            
         }
     }
 
@@ -116,7 +120,18 @@ public class SlideController : MonoBehaviour
 
     private void ControlNumberOfPlants() //Função responsável em criar mais plantas com o tempo, não está pronta
     {
-
+        if(pontos < 3)
+        {
+            CreatePlant(2);
+        }
+        else if(pontos < 7)
+        {
+            CreatePlant(3);
+        }
+        else if(pontos < 11)
+        {
+            CreatePlant(5);
+        } 
     }
 
 }
