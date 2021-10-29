@@ -31,11 +31,20 @@
               <e p="ComputerWindowOptions.cs" t="Include" />
               <e p="Minigames" t="Include">
                 <e p="Ghost Hunter" t="Include">
-                  <e p="floor" t="Include">
-                    <e p="timess.cs" t="Include" />
+                  <e p="Audio" t="Include">
+                    <e p="AudioCollection.cs" t="Include" />
+                  </e>
+                  <e p="Ghost_Enemy.cs" t="Include" />
+                  <e p="invisible_wall" t="Include">
+                    <e p="Ending.cs" t="Include" />
+                    <e p="TriggerWall.cs" t="Include" />
+                  </e>
+                  <e p="PlayerCombatSystem.cs" t="Include" />
+                  <e p="PlayerSettings.cs" t="Include" />
+                  <e p="post_processing" t="Include">
+                    <e p="WireframeEffect.cs" t="Include" />
                   </e>
                   <e p="ReachPos.cs" t="Include" />
-                  <e p="WireframeEffect.cs" t="Include" />
                 </e>
                 <e p="Minigame.cs" t="Include" />
               </e>

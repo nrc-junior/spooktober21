@@ -49,6 +49,32 @@ MonoBehaviour:
   quality:
     overrideState: 1
     value: 2
+--- !u!114 &-6180919301033476251
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6050e2d5de785ce4d931e4dbdbf2d755, type: 3}
+  m_Name: ChromaticAberration
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  spectralLut:
+    overrideState: 1
+    value: {fileID: 0}
+    defaultState: 1
+  intensity:
+    overrideState: 1
+    value: 0.15
+  fastMode:
+    overrideState: 1
+    value: 0
 --- !u!114 &-5057959833390977734
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -99,6 +125,55 @@ MonoBehaviour:
   - {fileID: -6304631617612653187}
   - {fileID: -5057959833390977734}
   - {fileID: 6358310065562168962}
+  - {fileID: 2070325986649715551}
+  - {fileID: -6180919301033476251}
+--- !u!114 &2070325986649715551
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48a79b01ea5641d4aa6daa2e23605641, type: 3}
+  m_Name: Bloom
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  intensity:
+    overrideState: 1
+    value: 25.86
+  threshold:
+    overrideState: 1
+    value: 1.88
+  softKnee:
+    overrideState: 1
+    value: 0.5
+  clamp:
+    overrideState: 1
+    value: 65472
+  diffusion:
+    overrideState: 1
+    value: 10
+  anamorphicRatio:
+    overrideState: 1
+    value: 1
+  color:
+    overrideState: 1
+    value: {r: 1, g: 1, b: 1, a: 1}
+  fastMode:
+    overrideState: 1
+    value: 0
+  dirtTexture:
+    overrideState: 1
+    value: {fileID: 0}
+    defaultState: 1
+  dirtIntensity:
+    overrideState: 1
+    value: 0
 --- !u!114 &6358310065562168962
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -117,7 +192,7 @@ MonoBehaviour:
     value: 1
   gradingMode:
     overrideState: 1
-    value: 1
+    value: 0
   externalLut:
     overrideState: 1
     value: {fileID: 0}
@@ -203,13 +278,13 @@ MonoBehaviour:
     value: 100
   lift:
     overrideState: 1
-    value: {x: 1, y: 1, z: 1, w: 0.02444988}
+    value: {x: 0.86518675, y: 1, z: 0.9315477, w: 0.0919035}
   gamma:
     overrideState: 1
-    value: {x: 1, y: 1, z: 1, w: 0.2689487}
+    value: {x: 1, y: 0.41403735, z: 0.57962364, w: -0.06831945}
   gain:
     overrideState: 1
-    value: {x: 1, y: 1, z: 1, w: -0.41564798}
+    value: {x: 0.9517424, y: 1, z: 0.8904218, w: -0.34819433}
   masterCurve:
     overrideState: 1
     value:
