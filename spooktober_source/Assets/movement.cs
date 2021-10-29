@@ -26,10 +26,12 @@ public class movement : MonoBehaviour
 			    dir.x < 0 && dir.y == 0 ? new Vector2(dir.x,dir.x) : // vai pra esquerda? se n é nenhum, então 
 				new Vector2(-dir.y, dir.y); // cima & baixo
 		    }else {
+			    print(dir);
 			    dir = 
-				    dir.x > 0 && dir.y < 0 ? new Vector2( dir.x,dir.x) : // vai pra direita? 
-				    dir.x < 0 && dir.y == 0 ? new Vector2(dir.x,dir.x) : // vai pra esquerda? se n é nenhum, então 
-				    new Vector2(-dir.y, dir.y); // cima & baixo
+				    dir.x > 0 && dir.y < 0 ? new Vector2( dir.x*1.5f,-dir.y/4) : // vai pra direita pra baixo?
+				    dir.x > 0 && dir.y > 0 ? new Vector2(-dir.x/4, dir.y*1.5f) : // vai pra esquerda?  
+				    dir.x < 0 && dir.y < 0 ? new Vector2(-dir.x/4, dir.y*1.5f) : // vai pra esquerda pra baixo?  
+				    new Vector2(dir.x*1.5f, -dir.y/5); // cima & baixo
 		    }
 		    
 	    }

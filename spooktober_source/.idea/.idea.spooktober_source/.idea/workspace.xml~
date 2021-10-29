@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="988f3cb0-abc6-4f26-9361-914bcf631a0d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/ferida/Dialogue/Dialogue.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ferida/Dialogue/Dialogue.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ferida/Dialogue/No.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ferida/Dialogue/No.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ferida/Dialogue/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ferida/Dialogue/Scripts/DialogueSystem.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ferida/Dialogue/Scripts/DialogueSystem/DialogueActivator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ferida/Dialogue/Scripts/DialogueSystem/DialogueActivator.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ferida/Dialogue/Scripts/DialogueSystem/DialogueObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ferida/Dialogue/Scripts/DialogueSystem/DialogueObject.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ferida/Dialogue/Scripts/DialogueSystem/DialogueUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ferida/Dialogue/Scripts/DialogueSystem/DialogueUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ferida/Dialogue/Scripts/DialogueSystem/IInteractable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ferida/Dialogue/Scripts/DialogueSystem/IInteractable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ferida/Dialogue/Scripts/DialogueSystem/Response.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ferida/Dialogue/Scripts/DialogueSystem/Response.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ferida/Dialogue/Scripts/DialogueSystem/ResponseHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ferida/Dialogue/Scripts/DialogueSystem/ResponseHandler.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ferida/Dialogue/Scripts/DialogueSystem/TypewriterEffect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ferida/Dialogue/Scripts/DialogueSystem/TypewriterEffect.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ferida/Dialogue/Scripts/Player_2D.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ferida/Dialogue/Scripts/Player_2D.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ferida/Dialogue/Test.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ferida/Dialogue/Test.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ferida/Dialogue/Yes.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ferida/Dialogue/Yes.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/minigame2.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/minigame2/dog.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/minigame2/dog.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/minigame2/food.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/minigame2/food.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/minigame2/ground.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/minigame2/ground.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/minigame2/minigame2.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/minigame2/minigame2.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/minigame2/movement2d.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/minigame2/movement2d.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/minigame2/player.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/minigame2/player.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/minigame2/ppFoop.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/minigame2/ppFoop.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/minigame2/score.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/minigame2/score.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/minigame2/spawn.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/minigame2/spawn.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/minigame2/spawned.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/minigame2/spawned.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ferida.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ferida.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ferida/ControlarLuz.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ferida/ControlarLuz.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimeManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimeManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/nrcbobo/computer/Minigames/Ghost Hunter/PlayerCombatSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/83A38F53-97D9-4E36-A22E-FA3369C82390/4a/56c46441/InitializeOnLoadAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/nrcbobo/computer/Minigames/Ghost Hunter/Ghost_Enemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/nrcbobo/reactions/ReactionTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/nrcbobo/computer/ComputerApp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ferida/SlideController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///C# Console" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/nrcbobo/computer/Minigames/Ghost Hunter/ReachPos.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/nrcbobo/music_trigger/TriggerMusic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Menu/Menu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/nrcbobo/room_load/script/RoomLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/nrcbobo/computer/ComputerDesktop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Menu/options/MenuSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/nrcbobo/computer/ComputerWindowOptions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/movement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Menu/effects/Art/IntroDelete.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/nrcbobo/computer/Minigames/Ghost Hunter/invisible_wall/TriggerWall.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/nrcbobo/computer/Minigames/Ghost Hunter/invisible_wall/Ending.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/nrcbobo/computer/Minigames/Ghost Hunter/PlayerSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/nrcbobo/computer/Minigames/Ghost Hunter/Audio/AudioCollection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/nrcbobo/computer/Minigames/Minigame.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scenes/nrcbobo/Teste.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/nrcbobo/RoomLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/nrcbobo/computer/icons/ComputerApp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/nrcbobo/computer/Minigames/Minigame.cs" />
+        <option value="$PROJECT_DIR$/Assets/movement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/nrcbobo/music_trigger/TriggerMusic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/nrcbobo/reactions/ReactionTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/nrcbobo/room_load/script/RoomLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Menu/effects/UiAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Menu/effects/Scanline.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Menu/effects/IntroDelete.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Menu/effects/Menu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Menu/Menu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Menu/options/MenuSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/nrcbobo/computer/ComputerWindowOptions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/nrcbobo/computer/ComputerApp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/nrcbobo/computer/ComputerDesktop.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/nrcbobo/computer/Minigames/Minigame Dog/TesteIniciar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/nrcbobo/computer/Minigames/Ghost Hunter/WireframeEffect.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/nrcbobo/computer/Minigames/Ghost Hunter/floor/timess.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/nrcbobo/computer/Minigames/Ghost Hunter/Audio/AudioDict.cs" />
+        <option value="$PROJECT_DIR$/Assets/ferida/SlideController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/nrcbobo/computer/Minigames/Ghost Hunter/Audio/AudioCollection.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/nrcbobo/computer/Minigames/Ghost Hunter/PlayerSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/nrcbobo/computer/Minigames/Ghost Hunter/Ghost_Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/nrcbobo/computer/Minigames/Ghost Hunter/invisible_wall/TriggerWall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/nrcbobo/computer/Minigames/Ghost Hunter/ReachPos.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/nrcbobo/computer/Minigames/Ghost Hunter/invisible_wall/Ending.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/nrcbobo/computer/Minigames/Ghost Hunter/PlayerCombatSystem.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="F:\spooktober21\spooktober_source\.idea\.idea.spooktober_source\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1zyk7JQASbNhZrvpW5cGdFJA3x9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Rider.SolutionExplorerActivator" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.3" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="988f3cb0-abc6-4f26-9361-914bcf631a0d" name="Default Changelist" comment="" />
+      <created>1635127550601</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635127550601</updated>
+      <workItem from="1635127567719" duration="45857000" />
+      <workItem from="1635274955705" duration="1621000" />
+      <workItem from="1635283983275" duration="8014000" />
+      <workItem from="1635309926339" duration="3775000" />
+      <workItem from="1635355396464" duration="40072000" />
+      <workItem from="1635488897205" duration="76000" />
+      <workItem from="1635489004548" duration="25161000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="273" y="88" key="VCS.ChangeListViewerDialog" timestamp="1635199646168">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="273" y="88" key="VCS.ChangeListViewerDialog/0.0.1366.768@0.0.1366.768" timestamp="1635199646168" />
+    <state x="339" y="172" width="672" height="677" key="run.anything.popup" timestamp="1635300936518">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="339" y="172" width="672" height="677" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1635300936518" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1635516020299">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1635516020299" />
+  </component>
+</project>

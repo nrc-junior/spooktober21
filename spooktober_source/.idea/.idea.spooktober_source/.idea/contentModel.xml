@@ -8,7 +8,27 @@
       <e p="Assets" t="Include">
         <e p="ferida" t="Include">
           <e p="ControlarLuz.cs" t="Include" />
+          <e p="Dialogue" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="DialogueSystem" t="Include">
+                <e p="DialogueActivator.cs" t="Include" />
+                <e p="DialogueObject.cs" t="Include" />
+                <e p="DialogueUI.cs" t="Include" />
+                <e p="IInteractable.cs" t="Include" />
+                <e p="Response.cs" t="Include" />
+                <e p="ResponseHandler.cs" t="Include" />
+                <e p="TypewriterEffect.cs" t="Include" />
+              </e>
+              <e p="Player_2D.cs" t="Include" />
+            </e>
+          </e>
           <e p="SlideController.cs" t="Include" />
+        </e>
+        <e p="minigame2" t="Include">
+          <e p="movement2d.cs" t="Include" />
+          <e p="ppFoop.cs" t="Include" />
+          <e p="score.cs" t="Include" />
+          <e p="spawn.cs" t="Include" />
         </e>
         <e p="movement.cs" t="Include" />
         <e p="Scenes" t="Include">
