@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4073edb367c97fe439d1056a5d4aa860, type: 3}
+  m_Name: Test
+  m_EditorClassIdentifier: 
+  dialogue:
+  - MATOUAMATOUAMATOUAMATOUAMATOUAMATOUAMATOUAMATOUAMATOUAMATOUA
+  - "Segundo di\xE1logo..........\ntchau............"
+  responses:
+  - responseText: Yes
+    dialogueObject: {fileID: 11400000, guid: 82b81808f809bb24bb65c8e748af82d5, type: 2}
+  - responseText: No
+    dialogueObject: {fileID: 11400000, guid: d573a77a9b0f3174c8bd92e0321a9247, type: 2}
