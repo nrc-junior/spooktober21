@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class DialogueUI : MonoBehaviour
 {
     [SerializeField] private GameObject dialogueBox;
     [SerializeField] private TMP_Text textLabel;
-
+    [SerializeField] private Image picture;
+    [SerializeField] private Image background;
     public bool IsOpen {get; private set; }
     private ResponseHandler responseHandler;
     private TypewriterEffect typewriterEffect;
@@ -21,8 +23,16 @@ public class DialogueUI : MonoBehaviour
 
     public void ShowDialogue(DialogueObject dialogueObject)
     {
+
         dialogueBox.SetActive(true);
+        background.sprite = dialogueObject.Background;
+        picture.sprite = dialogueObject.Picture;
         StartCoroutine(StepThroughDialogue(dialogueObject));
+    }
+
+    public void AddResponseEvents(ResponseEvent[] responseEvents)
+    {
+        responseHandler.AddResponseEvents(responseEvents);
     }
 
     private IEnumerator StepThroughDialogue(DialogueObject dialogueObject)
@@ -39,7 +49,7 @@ public class DialogueUI : MonoBehaviour
             if(i == dialogueObject.Dialogue.Length - 1 && dialogueObject.HasResponses) break;
 
             yield return null;
-            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
+            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));
         }
 
         if (dialogueObject.HasResponses)
@@ -60,7 +70,7 @@ public class DialogueUI : MonoBehaviour
         while(typewriterEffect.IsRunning)
         {
             yield return null;
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 typewriterEffect.Stop();
             }
@@ -68,7 +78,7 @@ public class DialogueUI : MonoBehaviour
     }
 
 
-    private void CloseDialogueBox()
+    public void CloseDialogueBox()
     {
         IsOpen = false;
         dialogueBox.SetActive(false);

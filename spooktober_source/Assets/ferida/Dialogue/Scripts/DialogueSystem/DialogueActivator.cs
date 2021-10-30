@@ -1,8 +1,14 @@
+
 using UnityEngine;
 
 public class DialogueActivator : MonoBehaviour, IInteractable
 {
     [SerializeField] private DialogueObject dialogueObject;
+
+    public void UpdateDialogObject(DialogueObject dialogueObject)
+    {
+        this.dialogueObject = dialogueObject;
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -24,6 +30,11 @@ public class DialogueActivator : MonoBehaviour, IInteractable
 
     public void Interact( Player_2D player)
     {
+        if (TryGetComponent(out DialogueResponseEvents responseEvents) && responseEvents.DialogueObject == dialogueObject)
+        {
+            player.DialogueUI.AddResponseEvents(responseEvents.Events);
+        }
+
         player.DialogueUI.ShowDialogue(dialogueObject);
     }
 }
