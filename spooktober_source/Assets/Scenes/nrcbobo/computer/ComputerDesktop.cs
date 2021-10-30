@@ -64,5 +64,9 @@ public class ComputerDesktop : MonoBehaviour {
             tollbar_open = true;
         }
     }
-    
+
+
+    public void reseted_modem() {
+        sator_avaiable = true;
+    }
 }

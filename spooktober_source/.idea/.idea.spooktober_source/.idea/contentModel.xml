@@ -30,7 +30,6 @@
           <e p="score.cs" t="Include" />
           <e p="spawn.cs" t="Include" />
         </e>
-        <e p="movement.cs" t="Include" />
         <e p="Scenes" t="Include">
           <e p="Menu" t="Include">
             <e p="effects" t="Include">
@@ -81,6 +80,13 @@
               </e>
             </e>
           </e>
+        </e>
+        <e p="ScriptsIRL" t="Include">
+          <e p="GenericActivatorTrigger.cs" t="Include" />
+          <e p="Moving.cs" t="Include" />
+          <e p="PlayerData.cs" t="Include" />
+          <e p="RouterResetTrigger.cs" t="Include" />
+          <e p="teste.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">

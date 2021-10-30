@@ -7,7 +7,7 @@ public class ControlarLuz : MonoBehaviour
 
     public Light _luz;
     public bool _working = true; //Quando não tiver energia na casa, essa variável deve ser falsa
-    private bool _estado = false;
+    public bool _estado = false;
     private bool _colidindo = false; //Controla se o player está ou não no range do interruptor
 
     void Update()
