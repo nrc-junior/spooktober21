@@ -24,6 +24,7 @@
               <e p="Player_2D.cs" t="Include" />
             </e>
           </e>
+          <e p="MusicController.cs" t="Include" />
           <e p="SlideController.cs" t="Include" />
         </e>
         <e p="minigame2" t="Include">
@@ -31,6 +32,7 @@
           <e p="ppFoop.cs" t="Include" />
           <e p="score.cs" t="Include" />
           <e p="spawn.cs" t="Include" />
+          <e p="timer.cs" t="Include" />
         </e>
         <e p="Scenes" t="Include">
           <e p="Menu" t="Include">

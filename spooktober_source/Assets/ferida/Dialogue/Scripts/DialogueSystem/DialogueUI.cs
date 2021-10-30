@@ -49,7 +49,7 @@ public class DialogueUI : MonoBehaviour
             if(i == dialogueObject.Dialogue.Length - 1 && dialogueObject.HasResponses) break;
 
             yield return null;
-            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));
+            yield return new WaitUntil(() => (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Space)));
         }
 
         if (dialogueObject.HasResponses)
@@ -70,7 +70,7 @@ public class DialogueUI : MonoBehaviour
         while(typewriterEffect.IsRunning)
         {
             yield return null;
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Space))
             {
                 typewriterEffect.Stop();
             }
