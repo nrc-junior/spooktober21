@@ -17,7 +17,7 @@ public class ComputerApp : MonoBehaviour {
 		    desktop.Crash(mg.app_name);
 			return;
 	    }else if (!desktop.connection) {
-		    desktop.noConnection();
+		    desktop.noConnection("DOWNLOADING...");
 	    }
 		
 	    //parent.gameObject.SetActive(false);
