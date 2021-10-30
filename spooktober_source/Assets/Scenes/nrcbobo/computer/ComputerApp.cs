@@ -16,7 +16,16 @@ public class ComputerApp : MonoBehaviour {
 		if (!desktop.connection) {
 		    desktop.noConnection("DOWNLOADING...");
 	    }else {
-			desktop.noConnection("DOWNLOADING...", true, mg.id);
+			string message = "DOWNLOADING...";
+			switch (mg.secondary_id){
+				case 2: message = StaticDataLoader.event_minigame1_finished ? "OPENING..." : message; 
+					break;
+				case 3: message = StaticDataLoader.event_minigame2_finished ? "OPENING..." : message; 
+					break;
+				case 4: message = StaticDataLoader.event_minigame3_finished ? "OPENING..." : message; 
+					break;
+			}
+			desktop.noConnection(message, true, mg.id);
 		}
 		
 	    //parent.gameObject.SetActive(false);

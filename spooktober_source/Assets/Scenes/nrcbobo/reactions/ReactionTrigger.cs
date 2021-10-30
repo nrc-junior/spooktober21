@@ -11,7 +11,7 @@ public class ReactionTrigger : MonoBehaviour {
     void OnTriggerEnter(Collider col) {
         if (!played) {
             played = !repeatable;
-            Animator anim = col.transform.GetChild(0).GetComponent<Animator>();
+            Animator anim = col.transform.Find("Reaction").GetComponent<Animator>();
             anim.transform.GetChild(anim.transform.childCount - 1).GetComponent<Image>().sprite = display_image;
             StartCoroutine(PlayAnim(anim));
         }

@@ -71,6 +71,12 @@ public class ComputerDesktop : MonoBehaviour {
         player_move.Blackout();
         ExitComputer();
     }
+
+    void KillFlowers() {
+        player_move.GetComponent<PlayerData>().SwitchPlants();
+    }
+    
+    
     #endregion
     #region connection
     [HideInInspector] public bool connection;
@@ -135,7 +141,7 @@ public class ComputerDesktop : MonoBehaviour {
     }
 
     IEnumerator errorDownload(string text, bool connect = false, int id = -1) {
-        int stop = connect || id >= 0 ? 100 : 5; 
+        int stop = connect && id >= 0 ? 100 : 5; 
         
         download.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = text;
         while (download.value < stop) {
@@ -150,8 +156,11 @@ public class ComputerDesktop : MonoBehaviour {
             GetComponent<SceneManagement>().Load(id);
             yield return true;
         }else {
-            if (connection) {
+            bool downloaded = text == "OPENING...";
+            if (connection && !downloaded) {
                  sator_warn.SetActive(true);           
+            }else if(downloaded) {
+                played_warn.SetActive(true);
             }else {
                 download_error.gameObject.SetActive(true);
             }
@@ -179,11 +188,34 @@ public class ComputerDesktop : MonoBehaviour {
     }
 
     #region minigames
-
+    public GameObject played_warn;
+    public Minigame rose_garden;
+    public Minigame hungry_dog;
+    public Minigame trick_or_treat;
+    
     void IRLdataController() {
         if (StaticDataLoader.event_minigame1_finished) {
             Destroy(player_move.GetComponent<PlayerData>().router_object);
             ConnectInternet();
+            KillFlowers();
+            rose_garden.id = -1;
+            hungry_dog.id = 3;
+            
+            if (StaticDataLoader.event_minigame2_finished) {
+                hungry_dog.id = -1;
+                trick_or_treat.id = 4;
+                // evento: batida na porta (menino tomate)
+                
+                if (StaticDataLoader.event_minigame3_finished) {
+                    trick_or_treat.id = -1;
+                    // evento: batida na porta (satanas ou não)    
+                    if (StaticDataLoader.ending) {
+                        print("good ending");
+                    }else {
+                        print("bad ending");
+                    }
+                }
+            }
         }
     }
     
