@@ -42,7 +42,7 @@ public class SlideController : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown("space") && !runningAnimation && _working)
+        if((Input.GetKeyDown("space") || Input.GetKeyDown("e")) && !runningAnimation && _working)
             {
                 StartCoroutine(ClickedOnTime(_sliderValue));
             }
