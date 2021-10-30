@@ -742,13 +742,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Voc\xEA deixou esse jardim morrer."
   m_isRightToLeft: 0
-<<<<<<< HEAD
-  m_fontAsset: {fileID: 11400000, guid: cfa546aed7d338b4ab71a6ccba19ad5a, type: 2}
-  m_sharedMaterial: {fileID: -55292638988208815, guid: cfa546aed7d338b4ab71a6ccba19ad5a, type: 2}
-=======
   m_fontAsset: {fileID: 11400000, guid: 72968bfdcb41b3c45adcb814dff4c9dc, type: 2}
   m_sharedMaterial: {fileID: -7295159710650482870, guid: 72968bfdcb41b3c45adcb814dff4c9dc, type: 2}
->>>>>>> b6370a3b1150a532412a2bdcd4ad940f78acdfdf
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1160,11 +1155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-<<<<<<< HEAD
-  m_AnchoredPosition: {x: -0.000061035156, y: 0}
-=======
   m_AnchoredPosition: {x: 0, y: 0}
->>>>>>> b6370a3b1150a532412a2bdcd4ad940f78acdfdf
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1151343546
@@ -1226,13 +1217,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 000
   m_isRightToLeft: 0
-<<<<<<< HEAD
-  m_fontAsset: {fileID: 11400000, guid: cfa546aed7d338b4ab71a6ccba19ad5a, type: 2}
-  m_sharedMaterial: {fileID: -55292638988208815, guid: cfa546aed7d338b4ab71a6ccba19ad5a, type: 2}
-=======
   m_fontAsset: {fileID: 11400000, guid: 72968bfdcb41b3c45adcb814dff4c9dc, type: 2}
   m_sharedMaterial: {fileID: -7295159710650482870, guid: 72968bfdcb41b3c45adcb814dff4c9dc, type: 2}
->>>>>>> b6370a3b1150a532412a2bdcd4ad940f78acdfdf
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

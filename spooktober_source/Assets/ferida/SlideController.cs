@@ -4,7 +4,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SlideController : MonoBehaviour {
+public class SlideController : MonoBehaviour
+{
     public bool _working = true;
     [SerializeField] private Slider _slider;
     [SerializeField] private TextMeshProUGUI _pointText;
@@ -23,69 +24,73 @@ public class SlideController : MonoBehaviour {
     public Animator anim;
     private List<Image> plants = new List<Image>();
     private Animator animPlant;
-    public MusicController musicController;
+    public MusicController musicController; 
     public DialogueUI dialogueUI;
     public DialogueObject dialogueObject;
     private bool movimentation = true;
-
-    void Start() {
+    void Start()
+    {
 
         audioData = audioData = GetComponent<AudioSource>();
         StartCoroutine(CreatePlant(1));
-        _slider.onValueChanged.AddListener((v) => { _sliderValue = v; });
+        _slider.onValueChanged.AddListener((v) =>{
+            _sliderValue = v;
+        });
         StartCoroutine(UpdateSlider());
         StartCoroutine(MyTime());
     }
 
-    void Update() {
-        if (Input.GetKeyDown("space") && !runningAnimation && _working)
-        {
-            StartCoroutine(ClickedOnTime(_sliderValue));
-        }
+    void Update()
+    {
+        if((Input.GetKeyDown("space") || Input.GetKeyDown("e")) && !runningAnimation && _working)
+            {
+                StartCoroutine(ClickedOnTime(_sliderValue));
+            }
     }
 
-    IEnumerator MyTime() {
-        while (_working)
+    IEnumerator MyTime(){
+        while(_working)
         {
-            if (runningAnimation)
+            if(runningAnimation)
             {
                 yield return new WaitForSeconds(1.3f);
                 runningAnimation = false;
             }
-
             my_time += 0.01f;
             yield return new WaitForSeconds(0.01f);
         }
     }
 
-    IEnumerator UpdateSlider() {
-        while (_working)
+    IEnumerator UpdateSlider()
+    {
+        while(_working)
         {
-            _slider.value = Mathf.PingPong(my_time * speed, 160f);
+            _slider.value = Mathf.PingPong(my_time*speed,160f);
             yield return new WaitForSeconds(0.0003f);
         }
     }
 
-    IEnumerator ClickedOnTime(float clickTime) {
+    IEnumerator ClickedOnTime(float clickTime)
+    {
         runningAnimation = true;
         anim.Play("cavando");
         audioData.PlayDelayed(0.6f);
         gameObject.GetComponent<AudioSource>().Play();
         yield return new WaitForSeconds(1.3f);
-
-        print("Contage tamanho: " + plants.Count);
-        foreach (var plant in plants)
-        {
+        
+        print("Contage tamanho: " +plants.Count);
+        foreach(var plant in plants)
+        {   
             _correctClickZone = plant.rectTransform.anchoredPosition[0] / 3.625f;
-            print("Clickzone: " + _correctClickZone);
-            if (clickTime >= _correctClickZone - 5f && clickTime <= _correctClickZone + 5f)
+            print("Clickzone: "+ _correctClickZone);
+            if(clickTime >= _correctClickZone-5f && clickTime <= _correctClickZone+5f)
             {
                 print($"clicou {clickTime} | certo {_correctClickZone} | GANHOU");
-                totalPlantas += 1;
-                pontos += 1;
+                totalPlantas+=1;
+                pontos +=1;
                 _pointText.text = pontos.ToString();
                 RemovePlant(plant);
-                if (movimentation) ControlNumberOfPlants();
+                if(movimentation) ControlNumberOfPlants();
             }
             else
             {
@@ -96,40 +101,40 @@ public class SlideController : MonoBehaviour {
         runningAnimation = false;
     }
 
-    private (float, float) PositionPlant() {
+    private (float,float) PositionPlant()
+    {
         float xRandom = Random.Range(5f, 155f); //Onde o mato vai spawnar
         _correctClickZone = xRandom;
-        return (xRandom * 3.625f, _ZoneImage.rectTransform.anchoredPosition[1]);
+        return (xRandom  * 3.625f, _ZoneImage.rectTransform.anchoredPosition[1]);
     }
 
-    IEnumerator CreatePlant(int quantity) {
-        for (int i = 0; i < quantity; i++)
+    IEnumerator CreatePlant(int quantity)
+    {
+        for (int i=0; i<quantity; i++)
         {
-            if (_working)
-            {
+            if(_working){
                 var newObj = GameObject.Instantiate(_ZoneImage);
                 newObj.transform.SetParent(testeParent, false);
                 var cords = PositionPlant();
                 newObj.rectTransform.anchoredPosition = new Vector2(cords.Item1, cords.Item2);
                 animPlant = newObj.GetComponent<Animator>();
-                animPlant.SetInteger("animacao", Random.Range(1, 4));
+                animPlant.SetInteger("animacao", Random.Range(1,4));
                 plants.Add(newObj);
             }
-
-            if (quantity < 8)
+            if(quantity < 8)
             {
                 yield return new WaitForSeconds(Random.Range(3f, 6f));
             }
             else
             {
-                yield return new WaitForSeconds(Random.Range(0.03f, 0.7f));
-                ;
+                yield return new WaitForSeconds(Random.Range(0.03f, 0.7f));;
             }
-
+            
         }
     }
 
-    private void RemovePlant(Image image) {
+    private void RemovePlant(Image image)
+    {
         plants.Remove(image);
         Destroy(image.gameObject);
     }
@@ -138,33 +143,33 @@ public class SlideController : MonoBehaviour {
     {
 
         plantsToSpawn = 0;
-        if (pontos == 1)
+        if(pontos == 1)
         {
             plantsToSpawn = 2;
         }
-        else if (pontos == 3)
+        else if(pontos == 3)
         {
             plantsToSpawn = 8;
         }
-        else if (pontos == 11)
+        else if(pontos == 11)
         {
             plantsToSpawn = 12;
         }
-        else if (pontos == 23)
+        else if(pontos == 23)
         {
             plantsToSpawn = 7;
         }
-        else if (pontos == 30)
+        else if(pontos == 30)
         {
             StartCoroutine(perdeu());
             return;
         }
-
+        
 
         StartCoroutine(CreatePlant(plantsToSpawn));
     }
-
-    IEnumerator perdeu() {
+    IEnumerator perdeu()
+    {  
         movimentation = false;
         print("ativou");
         musicController.Stop();
@@ -174,6 +179,7 @@ public class SlideController : MonoBehaviour {
 
         yield return new WaitForSeconds(3f);
         dialogueUI.ShowDialogue(dialogueObject);
-        //?
+                    //?
     }
+
 }
