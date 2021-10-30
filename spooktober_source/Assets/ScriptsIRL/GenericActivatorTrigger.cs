@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GenericActivatorTrigger : MonoBehaviour {
-   Moving p;
    public GameObject activation;
+   Moving p;
    
    void OnTriggerEnter(Collider col) {
       if (col.tag == "Player") {
