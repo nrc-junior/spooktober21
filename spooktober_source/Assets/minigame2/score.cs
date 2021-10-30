@@ -10,8 +10,20 @@ public class score : MonoBehaviour
 
     int pontos = 0; 
     private void OnCollisionEnter(UnityEngine.Collision col) {
-        if (col.gameObject.name == "food(Clone)") {
+        if (col.gameObject.name == "cupcake(Clone)") {
             pontos++;
+            texto.text = pontos + " pontos!";
+        }
+        if (col.gameObject.name == "balinha(Clone)") {
+            pontos++;
+            texto.text = pontos + " pontos!";
+        }
+        if (col.gameObject.name == "pirulito(Clone)") {
+            pontos++;
+            texto.text = pontos + " pontos!";
+        }
+        if (col.gameObject.name == "vela(Clone)") {
+            pontos--;
             texto.text = pontos + " pontos!";
         }
     }

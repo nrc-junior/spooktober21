@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ppFoop : MonoBehaviour
 {
-    public float Speed = 5.0f;
+    public float Speed;
     public Rigidbody rb;
 
     void Update(){

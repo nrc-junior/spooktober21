@@ -7,7 +7,6 @@ public class movement2d : MonoBehaviour
     public float Speed = 10f;
     public Rigidbody rb;
     Vector3 mov;
-    private SphereCollider col;
     
     //usar o rigidbody 3d para o vector3
 
@@ -23,9 +22,7 @@ public class movement2d : MonoBehaviour
 	    
 	    mov = new Vector3(dir.x,0,0);
 
-        if (col == true){
-            Destroy(this.gameObject);
-        }
+
     }
 
     void FixedUpdate(){

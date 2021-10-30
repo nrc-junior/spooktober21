@@ -13,6 +13,8 @@ public class SlideController : MonoBehaviour
     [HideInInspector] public int pontos = 0;
     private int totalPlantas = 1;
     public int speed;
+    private int plantsToSpawn = 0;
+    private AudioSource audioData;
     public Transform testeParent;
     public GameObject parentt;
     private bool runningAnimation = false;
@@ -22,9 +24,15 @@ public class SlideController : MonoBehaviour
     public Animator anim;
     private List<Image> plants = new List<Image>();
     private Animator animPlant;
+    public MusicController musicController; 
+    public DialogueUI dialogueUI;
+    public DialogueObject dialogueObject;
+    private bool movimentation = true;
     void Start()
     {
-        CreatePlant(1);
+
+        audioData = audioData = GetComponent<AudioSource>();
+        StartCoroutine(CreatePlant(1));
         _slider.onValueChanged.AddListener((v) =>{
             _sliderValue = v;
         });
@@ -34,7 +42,7 @@ public class SlideController : MonoBehaviour
 
     void Update()
     {
-        if((Input.GetKeyDown("space") || Input.GetKeyDown("e")) && !runningAnimation)
+        if(Input.GetKeyDown("space") && !runningAnimation && _working)
             {
                 StartCoroutine(ClickedOnTime(_sliderValue));
             }
@@ -66,6 +74,8 @@ public class SlideController : MonoBehaviour
     {
         runningAnimation = true;
         anim.Play("cavando");
+        audioData.PlayDelayed(0.6f);
+        gameObject.GetComponent<AudioSource>().Play();
         yield return new WaitForSeconds(1.3f);
         
         print("Contage tamanho: " +plants.Count);
@@ -73,14 +83,14 @@ public class SlideController : MonoBehaviour
         {   
             _correctClickZone = plant.rectTransform.anchoredPosition[0] / 3.625f;
             print("Clickzone: "+ _correctClickZone);
-            if(clickTime >= _correctClickZone-10f && clickTime <= _correctClickZone+10f)
+            if(clickTime >= _correctClickZone-5f && clickTime <= _correctClickZone+5f)
             {
                 print($"clicou {clickTime} | certo {_correctClickZone} | GANHOU");
                 totalPlantas+=1;
                 pontos +=1;
                 _pointText.text = pontos.ToString();
                 RemovePlant(plant);
-                ControlNumberOfPlants();
+                if(movimentation) ControlNumberOfPlants();
             }
             else
             {
@@ -93,22 +103,33 @@ public class SlideController : MonoBehaviour
 
     private (float,float) PositionPlant()
     {
-        float xRandom = Random.Range(40f, 150f); //Onde o mato vai spawnar
+        float xRandom = Random.Range(5f, 155f); //Onde o mato vai spawnar
         _correctClickZone = xRandom;
         return (xRandom  * 3.625f, _ZoneImage.rectTransform.anchoredPosition[1]);
     }
 
-    private void CreatePlant(int quantity)
+    IEnumerator CreatePlant(int quantity)
     {
         for (int i=0; i<quantity; i++)
         {
-            var newObj = GameObject.Instantiate(_ZoneImage);
-            newObj.transform.SetParent(testeParent, false);
-            var cords = PositionPlant();
-            newObj.rectTransform.anchoredPosition = new Vector2(cords.Item1, cords.Item2);
-            animPlant = newObj.GetComponent<Animator>();
-            animPlant.SetInteger("animacao", Random.Range(1,4));
-            plants.Add(newObj);
+            if(_working){
+                var newObj = GameObject.Instantiate(_ZoneImage);
+                newObj.transform.SetParent(testeParent, false);
+                var cords = PositionPlant();
+                newObj.rectTransform.anchoredPosition = new Vector2(cords.Item1, cords.Item2);
+                animPlant = newObj.GetComponent<Animator>();
+                animPlant.SetInteger("animacao", Random.Range(1,4));
+                plants.Add(newObj);
+            }
+            if(quantity < 8)
+            {
+                yield return new WaitForSeconds(Random.Range(3f, 6f));
+            }
+            else
+            {
+                yield return new WaitForSeconds(Random.Range(0.03f, 0.7f));;
+            }
+            
         }
     }
 
@@ -120,18 +141,45 @@ public class SlideController : MonoBehaviour
 
     private void ControlNumberOfPlants() //Função responsável em criar mais plantas com o tempo, não está pronta
     {
-        if(pontos < 3)
+
+        plantsToSpawn = 0;
+        if(pontos == 1)
         {
-            CreatePlant(2);
+            plantsToSpawn = 2;
         }
-        else if(pontos < 7)
+        else if(pontos == 3)
         {
-            CreatePlant(3);
+            plantsToSpawn = 8;
         }
-        else if(pontos < 11)
+        else if(pontos == 11)
         {
-            CreatePlant(5);
-        } 
+            plantsToSpawn = 12;
+        }
+        else if(pontos == 23)
+        {
+            plantsToSpawn = 7;
+        }
+        else if(pontos == 30)
+        {
+            StartCoroutine(perdeu());
+            return;
+        }
+        
+
+        StartCoroutine(CreatePlant(plantsToSpawn));
+    }
+    IEnumerator perdeu()
+    {  
+        movimentation = false;
+        print("ativou");
+        musicController.Stop();
+        StartCoroutine(CreatePlant(30));
+        yield return new WaitForSeconds(14f);
+        _working = false;
+
+        yield return new WaitForSeconds(3f);
+        dialogueUI.ShowDialogue(dialogueObject);
+                    //?
     }
 
 }
