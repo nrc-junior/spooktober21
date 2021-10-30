@@ -7,6 +7,7 @@ public class score : MonoBehaviour
 {
 
     public TMP_Text texto;
+    public Animator anime;
 
     int pontos = 0; 
     private void OnCollisionEnter(UnityEngine.Collision col) {
@@ -29,6 +30,8 @@ public class score : MonoBehaviour
     }
     void Update()
     {
-        
+        if(pontos == 2){
+            anime.SetBool ("dead", true);
+        }        
     }
 }
