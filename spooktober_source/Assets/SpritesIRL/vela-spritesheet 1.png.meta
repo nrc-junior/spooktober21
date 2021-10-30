@@ -1,0 +1,852 @@
+fileFormatVersion: 2
+guid: a52ed6f350b8089489775e841dc96ca0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4121148606595869155
+    second: vela-spritesheet 1_0
+  - first:
+      213: -6237847012433635033
+    second: vela-spritesheet 1_1
+  - first:
+      213: 5115643263700711336
+    second: vela-spritesheet 1_2
+  - first:
+      213: 6785376269991237844
+    second: vela-spritesheet 1_3
+  - first:
+      213: -6646691986964973485
+    second: vela-spritesheet 1_4
+  - first:
+      213: -6346006192956176856
+    second: vela-spritesheet 1_5
+  - first:
+      213: -460145158659367358
+    second: vela-spritesheet 1_6
+  - first:
+      213: -3749760515231500251
+    second: vela-spritesheet 1_7
+  - first:
+      213: 5282829415804367413
+    second: vela-spritesheet 1_8
+  - first:
+      213: 3002807842644292346
+    second: vela-spritesheet 1_9
+  - first:
+      213: -2102579637943256154
+    second: vela-spritesheet 1_10
+  - first:
+      213: 3761517989009104362
+    second: vela-spritesheet 1_11
+  - first:
+      213: 5064887750003982630
+    second: vela-spritesheet 1_12
+  - first:
+      213: -6315448370286455209
+    second: vela-spritesheet 1_13
+  - first:
+      213: 3148168991017631111
+    second: vela-spritesheet 1_14
+  - first:
+      213: 5404090407989692312
+    second: vela-spritesheet 1_15
+  - first:
+      213: 3227126924224393225
+    second: vela-spritesheet 1_16
+  - first:
+      213: 1759882443267003963
+    second: vela-spritesheet 1_17
+  - first:
+      213: -2487360790852074133
+    second: vela-spritesheet 1_18
+  - first:
+      213: -5115428641495948132
+    second: vela-spritesheet 1_19
+  - first:
+      213: -8280067459201419363
+    second: vela-spritesheet 1_20
+  - first:
+      213: -4184832522224668901
+    second: vela-spritesheet 1_21
+  - first:
+      213: 8266877452321446597
+    second: vela-spritesheet 1_22
+  - first:
+      213: -396234673373495425
+    second: vela-spritesheet 1_23
+  - first:
+      213: 4121147636099276656
+    second: vela-spritesheet 1_24
+  - first:
+      213: 372481348820087455
+    second: vela-spritesheet 1_25
+  - first:
+      213: 7282354312879839426
+    second: vela-spritesheet 1_26
+  - first:
+      213: -4803977165536664071
+    second: vela-spritesheet 1_27
+  - first:
+      213: -6269209592797011377
+    second: vela-spritesheet 1_28
+  - first:
+      213: 4248732353678031092
+    second: vela-spritesheet 1_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vela-spritesheet 1_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d16d1455d2dbec6c0800000000000000
+      internalID: -4121148606595869155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72959a41137be69a0800000000000000
+      internalID: -6237847012433635033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_2
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7308ac17a6ef640800000000000000
+      internalID: 5115643263700711336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_3
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d8513064cf7a2e50800000000000000
+      internalID: 6785376269991237844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_4
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35874818ad432c3a0800000000000000
+      internalID: -6646691986964973485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_5
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8260b667df47ee7a0800000000000000
+      internalID: -6346006192956176856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_6
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e1ef88a6c3d99f0800000000000000
+      internalID: -460145158659367358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_7
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52837d0bdac26fbc0800000000000000
+      internalID: -3749760515231500251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_8
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 532f0023d51605940800000000000000
+      internalID: 5282829415804367413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_9
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af2f195c2dd1ca920800000000000000
+      internalID: 3002807842644292346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_10
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab3c6095f222d2e0800000000000000
+      internalID: -2102579637943256154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_11
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed112f7ea8933430800000000000000
+      internalID: 3761517989009104362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_12
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 621073ed2981a4640800000000000000
+      internalID: 5064887750003982630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_13
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75691cbfa250b58a0800000000000000
+      internalID: -6315448370286455209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_14
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d7182840b80bb20800000000000000
+      internalID: 3148168991017631111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_15
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 897425e089f2ffa40800000000000000
+      internalID: 5404090407989692312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_16
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9007e7be6de09cc20800000000000000
+      internalID: 3227126924224393225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_17
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b36506502cb5c6810800000000000000
+      internalID: 1759882443267003963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_18
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6507011a8e1b7dd0800000000000000
+      internalID: -2487360790852074133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_19
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9466c5d0c85209b0800000000000000
+      internalID: -5115428641495948132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_20
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d97370af38a471d80800000000000000
+      internalID: -8280067459201419363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_21
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1feb444efc7ce5c0800000000000000
+      internalID: -4184832522224668901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_22
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca5e4b3e39d9b270800000000000000
+      internalID: 8266877452321446597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_23
+      rect:
+        serializedVersion: 2
+        x: 1582
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f31e5f9aa408af0800000000000000
+      internalID: -396234673373495425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_24
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f53a4b0f1413930800000000000000
+      internalID: 4121147636099276656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_25
+      rect:
+        serializedVersion: 2
+        x: 1718
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9231e130d15b2500800000000000000
+      internalID: 372481348820087455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_26
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c89cbbf9ae101560800000000000000
+      internalID: 7282354312879839426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_27
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f569137838d45db0800000000000000
+      internalID: -4803977165536664071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_28
+      rect:
+        serializedVersion: 2
+        x: 1922
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f42ecde471b4ff8a0800000000000000
+      internalID: -6269209592797011377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vela-spritesheet 1_29
+      rect:
+        serializedVersion: 2
+        x: 1990
+        y: 0
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f830be909786fa30800000000000000
+      internalID: 4248732353678031092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

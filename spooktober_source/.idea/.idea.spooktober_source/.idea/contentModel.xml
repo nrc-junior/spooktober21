@@ -13,15 +13,18 @@
               <e p="DialogueSystem" t="Include">
                 <e p="DialogueActivator.cs" t="Include" />
                 <e p="DialogueObject.cs" t="Include" />
+                <e p="DialogueResponseEvents.cs" t="Include" />
                 <e p="DialogueUI.cs" t="Include" />
                 <e p="IInteractable.cs" t="Include" />
                 <e p="Response.cs" t="Include" />
+                <e p="ResponseEvent.cs" t="Include" />
                 <e p="ResponseHandler.cs" t="Include" />
                 <e p="TypewriterEffect.cs" t="Include" />
               </e>
               <e p="Player_2D.cs" t="Include" />
             </e>
           </e>
+          <e p="MusicController.cs" t="Include" />
           <e p="SlideController.cs" t="Include" />
         </e>
         <e p="minigame2" t="Include">
@@ -29,6 +32,11 @@
           <e p="ppFoop.cs" t="Include" />
           <e p="score.cs" t="Include" />
           <e p="spawn.cs" t="Include" />
+          <e p="timer.cs" t="Include" />
+        </e>
+        <e p="Save" t="Include">
+          <e p="SceneManagement.cs" t="Include" />
+          <e p="StaticDataLoader.cs" t="Include" />
         </e>
         <e p="Scenes" t="Include">
           <e p="Menu" t="Include">
@@ -86,7 +94,7 @@
           <e p="Moving.cs" t="Include" />
           <e p="PlayerData.cs" t="Include" />
           <e p="RouterResetTrigger.cs" t="Include" />
-          <e p="teste.cs" t="Include" />
+          <e p="TriggerBlackout.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
