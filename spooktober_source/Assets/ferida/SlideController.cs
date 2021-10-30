@@ -176,7 +176,8 @@ public class SlideController : MonoBehaviour
         StartCoroutine(CreatePlant(30));
         yield return new WaitForSeconds(14f);
         _working = false;
-
+        StaticDataLoader.event_minigame1_finished = true;
+        
         yield return new WaitForSeconds(3f);
         dialogueUI.ShowDialogue(dialogueObject);
                     //?

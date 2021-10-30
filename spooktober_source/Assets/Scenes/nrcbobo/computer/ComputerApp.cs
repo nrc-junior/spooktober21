@@ -13,12 +13,11 @@ public class ComputerApp : MonoBehaviour {
     
     public void LoadGame(Minigame mg) {
 	    
-	    if (mg.completed) {
-		    desktop.Crash(mg.app_name);
-			return;
-	    }else if (!desktop.connection) {
+		if (!desktop.connection) {
 		    desktop.noConnection("DOWNLOADING...");
-	    }
+	    }else {
+			desktop.noConnection("DOWNLOADING...", true, mg.id);
+		}
 		
 	    //parent.gameObject.SetActive(false);
 	    //desktop.StartGame(mg);

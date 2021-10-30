@@ -25,12 +25,15 @@ public class ComputerDesktop : MonoBehaviour {
     public GameObject system_notification;
     bool turn_on;
     bool opened_sator;
+
+    public GameObject sator_warn;
         
     void OnEnable() {
+        IRLdataController();
         if (player_move.sit) {
-        tollbar_open = false;
-        sator.SetActive(false);
-        logoff.SetActive(false);
+            tollbar_open = false;
+            sator.SetActive(false);
+            logoff.SetActive(false);
         }else {
             transform.parent.gameObject.SetActive(false);
         }
@@ -122,19 +125,37 @@ public class ComputerDesktop : MonoBehaviour {
             download.gameObject.SetActive(true);
             StartCoroutine(errorDownload(text));
         }
+    }    
+    
+    public void noConnection(string text, bool run, int id) {
+        if (!download_error.active) {
+            download.gameObject.SetActive(true);
+            StartCoroutine(errorDownload(text, run, id));
+        }
     }
 
-    IEnumerator errorDownload(string text) {
+    IEnumerator errorDownload(string text, bool connect = false, int id = -1) {
+        int stop = connect || id >= 0 ? 100 : 5; 
+        
         download.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = text;
-        while (download.value < 5) {
+        while (download.value < stop) {
             download.value++;
             yield return   new  WaitForSeconds(0.1f);
-            
         }
         yield return   new  WaitForSeconds(1f);
         download.gameObject.SetActive(false);
         download.value = 0;
-        download_error.gameObject.SetActive(true);
+        
+        if (connect && id >= 0) {
+            GetComponent<SceneManagement>().Load(id);
+            yield return true;
+        }else {
+            if (connection) {
+                 sator_warn.SetActive(true);           
+            }else {
+                download_error.gameObject.SetActive(true);
+            }
+        }
     }
   
    
@@ -156,4 +177,18 @@ public class ComputerDesktop : MonoBehaviour {
     public void reseted_modem() {
         sator_avaiable = true;
     }
+
+    #region minigames
+
+    void IRLdataController() {
+        if (StaticDataLoader.event_minigame1_finished) {
+            Destroy(player_move.GetComponent<PlayerData>().router_object);
+            ConnectInternet();
+        }
+    }
+    
+
+    #endregion
+    
+    
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class DialogueUI : MonoBehaviour
 {
@@ -83,5 +84,10 @@ public class DialogueUI : MonoBehaviour
         IsOpen = false;
         dialogueBox.SetActive(false);
         textLabel.text = string.Empty;
+    }
+
+    // nrc: chamar esse metodo quando terminar o ultimo dialogo. 
+    void ReturnToIRL() { 
+        GetComponent<SceneManagement>().Load(0);
     }
 }
