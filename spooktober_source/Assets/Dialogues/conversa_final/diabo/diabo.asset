@@ -13,9 +13,7 @@ MonoBehaviour:
   m_Name: diabo
   m_EditorClassIdentifier: 
   dialogue:
-  - Well,
-  - well,
-  - well...
+  - Well, well, well...
   - What a bad ending, uh?
   - You played those games without thinking about your own actions.
   - You made them suffer,
