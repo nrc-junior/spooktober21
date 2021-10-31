@@ -62,7 +62,11 @@ public class TriggerOlhoMagico : MonoBehaviour {
             player.sit = false;
         }
         else if (evento_final) {
-            SceneManager.LoadScene(5);
+            if (StaticDataLoader.ending) {
+                
+            }else {
+                
+            }
         }
     }
     

@@ -30,6 +30,12 @@ public class ComputerDesktop : MonoBehaviour {
     public GameObject sator_warn;
         
     void OnEnable() {
+        player_move.sit = true;
+        Color c = Color.white;
+        c.a = 0;
+        player_move.transform.GetChild(0).GetComponent<MeshRenderer>().material.color = c;
+        player_move.on_chair.SetActive(true);
+        
         StaticDataLoader.event_minigame1_finished = true;
         StaticDataLoader.event_minigame2_finished = true;
         StaticDataLoader.event_minigame3_finished = true;
@@ -47,6 +53,8 @@ public class ComputerDesktop : MonoBehaviour {
 
     void Start() {
         p_data = player_move.GetComponent<PlayerData>();
+        
+        
     }
 
     public void TurnSator() {
@@ -202,11 +210,15 @@ public class ComputerDesktop : MonoBehaviour {
 
     #region eventos
 
+    public SoundController sc;
     void TomatoKid() {
         // falta batida na porta
         p_data.olho_magico.EventoTomate();
-    } 
+    }
 
+    void DoorSlam() {
+    
+    }
     
 
     #endregion
@@ -230,10 +242,12 @@ public class ComputerDesktop : MonoBehaviour {
                 trick_or_treat.id = 4;
                 KillDog();
                 TomatoKid();
+                ExitComputer();
                 
                 if (StaticDataLoader.event_minigame3_finished) {
                     p_data.olho_magico.evento_tomate = false;
                     p_data.olho_magico.EventoFinal();
+                    ExitComputer();
                     trick_or_treat.id = -1;
                     // evento: batida na porta (satanas ou não)    
                     if (StaticDataLoader.ending) {

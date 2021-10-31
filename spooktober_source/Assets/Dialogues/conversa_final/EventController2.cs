@@ -25,8 +25,8 @@ public class EventController2 : MonoBehaviour {
             while(dialogueUI.IsOpen)
             {
                 yield return null;
-            }
-            yield return null;
+            } 
+            GetComponent<TriggerOlhoMagico>().ReleasePlayer();
         }
         yield return null;
     }
