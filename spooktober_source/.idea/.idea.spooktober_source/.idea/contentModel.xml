@@ -9,6 +9,11 @@
         <e p="Credits" t="Include">
           <e p="Credits.cs" t="Include" />
         </e>
+        <e p="Dialogues" t="Include">
+          <e p="evento_menino_tomate" t="Include">
+            <e p="EventController1.cs" t="Include" />
+          </e>
+        </e>
         <e p="ferida" t="Include">
           <e p="ControlarLuz.cs" t="Include" />
           <e p="Dialogue" t="Include">
@@ -31,11 +36,12 @@
           <e p="SlideController.cs" t="Include" />
         </e>
         <e p="minigame2" t="Include">
-          <e p="movement2d.cs" t="Include" />
-          <e p="ppFoop.cs" t="Include" />
-          <e p="score.cs" t="Include" />
-          <e p="spawn.cs" t="Include" />
-          <e p="timer.cs" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="movement2d.cs" t="Include" />
+            <e p="ppFoop.cs" t="Include" />
+            <e p="score.cs" t="Include" />
+            <e p="spawn.cs" t="Include" />
+          </e>
         </e>
         <e p="Save" t="Include">
           <e p="SceneManagement.cs" t="Include" />
