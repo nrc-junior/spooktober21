@@ -24,9 +24,13 @@ public class PlayerSettings : MonoBehaviour {
 
     Rigidbody rb;
     CharacterController cc;
-
     float gravity = 0;
     Vector2 rot;
+
+
+    void Awake() {
+        mixer.GetFloat("volume", out GlobalMixer.volume );
+    }
     
     void Start() {
         cam_obj = Camera.main.transform.parent;
@@ -37,6 +41,10 @@ public class PlayerSettings : MonoBehaviour {
         cc = gameObject.GetComponent<CharacterController>();
         wireframe.SetActive(true);
         line_color = tips.GetComponent<RawImage>();
+      
+        audios = GetComponent<AudioCollection>();
+        idle_source = GetComponent<AudioSource>();
+        IdleAudio();
     }
     
     void Update() {
@@ -44,7 +52,12 @@ public class PlayerSettings : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Escape) && !inCombat) {
             paused = !paused;
             wireframe.SetActive(paused);
-            if (paused) Cursor.lockState = CursorLockMode.None;
+            if (paused) {
+                Cursor.lockState = CursorLockMode.None;
+                
+            }else {
+                
+            }
             Cursor.visible = paused;
             tips.SetActive(paused);
             main.SetActive(!paused);
@@ -92,7 +105,6 @@ public class PlayerSettings : MonoBehaviour {
             wireframe.transform.position = new Vector3(1,6,31);
             wireframe.transform.rotation = new Quaternion(0.00569213834f,-0.967265368f,0.252854884f,-0.0207314882f);
             main.SetActive(false);
-            audio_lis = wireframe.AddComponent<AudioListener>();
             audio_src = wireframe.AddComponent<AudioSource>();
             tips.SetActive(true);
             for (int i = 0; i < tips.transform.childCount; i++) {
@@ -103,7 +115,6 @@ public class PlayerSettings : MonoBehaviour {
             wireframe.transform.parent = cam_obj;
             wireframe.transform.localPosition = Vector3.zero;
             wireframe.transform.localRotation = main.transform.localRotation;
-            Destroy(audio_lis);
             Destroy(audio_src);
             main.SetActive(true);
             wireframe.SetActive(false);
@@ -116,20 +127,50 @@ public class PlayerSettings : MonoBehaviour {
 
 
     public void setCombatColor(Color c) => line_color.color = c;
-    AudioListener audio_lis;
-    AudioSource audio_src;
-    [SerializeField] private AudioMixer  am;
 
+    #region audio
+
+    public AudioMixer mixer;
+    AudioSource audio_src;
+    
     public void playSound(AudioClip ac) {
         playSound(ac, audio_src);
     }
     
-
     public void playSound(AudioClip ac, AudioSource sr) {
-        am.GetFloat("volume", out float _vol);
-        sr.PlayOneShot(ac, _vol);
+        sr.PlayOneShot(ac, GlobalMixer.volume);
     }
 
+    AudioCollection audios;
+    AudioSource idle_source;
+
+    public void CombatAudio() {
+        StartCoroutine(MusicFade(idle_source, 1.5f,  0));
+        idle_source.Stop();
+        idle_source.clip = audios.music_combat;
+        idle_source.Play();
+        StartCoroutine(MusicFade(idle_source, 1.5f,  GlobalMixer.volume));
+    }
     
+    public void IdleAudio() {
+        idle_source.volume = 0;
+        idle_source.clip = audios.music_idle;
+        idle_source.Play();
+        StartCoroutine(MusicFade(idle_source, 5,  GlobalMixer.volume  ));
+    } 
+        
+    public IEnumerator MusicFade(AudioSource audioSource, float duration, float targetVolume) {
+        float currentTime = 0;
+        float start = audioSource.volume;
+
+        while (currentTime < duration) {
+            currentTime += Time.deltaTime;
+            audioSource.volume = Mathf.Lerp(start, targetVolume, currentTime / duration);
+            yield return null;
+        }
+        yield break;
+    }
+
+    #endregion
     
 }

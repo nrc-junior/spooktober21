@@ -1488,6 +1488,8 @@ MonoBehaviour:
   enemy: {fileID: 0}
   life: 0
   armor: 0
+  epicCombat: 0
+  speed: 0
   door: {fileID: 978786629}
 --- !u!65 &158409675
 BoxCollider:
@@ -2110,7 +2112,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh59876
+  m_Name: pb_Mesh119246
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7898,7 +7900,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60120
+  m_Name: pb_Mesh119482
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8252,7 +8254,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60602
+  m_Name: pb_Mesh120034
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8444,6 +8446,8 @@ MonoBehaviour:
   enemy: {fileID: 7406041591327714878, guid: d045841856bfa6049913295687d24811, type: 3}
   life: 3
   armor: -1
+  epicCombat: 0
+  speed: 40
   door: {fileID: 2134294150}
 --- !u!65 &441865058
 BoxCollider:
@@ -14763,6 +14767,7 @@ GameObject:
   - component: {fileID: 647788476}
   - component: {fileID: 647788475}
   - component: {fileID: 647788478}
+  - component: {fileID: 647788479}
   m_Layer: 0
   m_Name: Demon_Wall
   m_TagString: Untagged
@@ -14819,6 +14824,103 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points_required: 2
+  afx: {fileID: 8300000, guid: b8fa93a191285fd4788f00977dafa0d9, type: 3}
+--- !u!82 &647788479
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647788474}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &655002415
 GameObject:
   m_ObjectHideFlags: 0
@@ -14865,7 +14967,6 @@ GameObject:
   m_Component:
   - component: {fileID: 660491434}
   - component: {fileID: 660491433}
-  - component: {fileID: 660491432}
   - component: {fileID: 660491435}
   - component: {fileID: 660491436}
   m_Layer: 3
@@ -14875,14 +14976,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &660491432
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 660491431}
-  m_Enabled: 1
 --- !u!20 &660491433
 Camera:
   m_ObjectHideFlags: 0
@@ -15054,6 +15147,8 @@ MonoBehaviour:
   enemy: {fileID: 0}
   life: 0
   armor: 0
+  epicCombat: 0
+  speed: 0
   door: {fileID: 1275585029}
 --- !u!65 &671664491
 BoxCollider:
@@ -16530,7 +16625,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh61084
+  m_Name: pb_Mesh120512
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -16694,7 +16789,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60320
+  m_Name: pb_Mesh119732
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -20080,6 +20175,8 @@ MonoBehaviour:
   enemy: {fileID: 0}
   life: 0
   armor: 0
+  epicCombat: 0
+  speed: 0
   door: {fileID: 735534321}
 --- !u!65 &929379816
 BoxCollider:
@@ -20114,7 +20211,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60566
+  m_Name: pb_Mesh120002
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -22047,7 +22144,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh59896
+  m_Name: pb_Mesh119266
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -22490,7 +22587,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60676
+  m_Name: pb_Mesh120110
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -23372,6 +23469,8 @@ MonoBehaviour:
   enemy: {fileID: 0}
   life: 0
   armor: 0
+  epicCombat: 0
+  speed: 0
   door: {fileID: 711909952}
 --- !u!65 &1060452394
 BoxCollider:
@@ -23455,7 +23554,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60354
+  m_Name: pb_Mesh119762
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -24275,6 +24374,8 @@ MonoBehaviour:
   enemy: {fileID: 0}
   life: 0
   armor: 0
+  epicCombat: 0
+  speed: 0
   door: {fileID: 1320387552}
 --- !u!65 &1154853195
 BoxCollider:
@@ -24725,7 +24826,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60006
+  m_Name: pb_Mesh119372
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -26815,6 +26916,8 @@ MonoBehaviour:
   enemy: {fileID: 3331881958045398225, guid: b7442502bf88e9f4287c1cd8cf7b76ca, type: 3}
   life: 12
   armor: 0
+  epicCombat: 0
+  speed: 70
   door: {fileID: 1100873732}
 --- !u!65 &1360152978
 BoxCollider:
@@ -26849,7 +26952,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60366
+  m_Name: pb_Mesh119774
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -30262,6 +30365,8 @@ MonoBehaviour:
   enemy: {fileID: 0}
   life: 0
   armor: 0
+  epicCombat: 0
+  speed: 0
   door: {fileID: 1544588221}
 --- !u!65 &1435616680
 BoxCollider:
@@ -30567,6 +30672,8 @@ MonoBehaviour:
   enemy: {fileID: 1507557459997768943, guid: 3488467e16476d745bb2f84084a03e5e, type: 3}
   life: 10
   armor: 0
+  epicCombat: 0
+  speed: 80
   door: {fileID: 1448420006}
 --- !u!65 &1474321597
 BoxCollider:
@@ -33084,7 +33191,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60942
+  m_Name: pb_Mesh120392
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -33592,6 +33699,8 @@ MonoBehaviour:
   enemy: {fileID: 0}
   life: 0
   armor: 0
+  epicCombat: 0
+  speed: 0
   door: {fileID: 1320387552}
 --- !u!65 &1643143257
 BoxCollider:
@@ -34050,6 +34159,8 @@ MonoBehaviour:
   enemy: {fileID: 4915813198156847039, guid: 3984b3ea0849ab343bdaa0a2a183cdc9, type: 3}
   life: 6
   armor: 1
+  epicCombat: 1
+  speed: 100
   door: {fileID: 1166347624}
 --- !u!65 &1696380400
 BoxCollider:
@@ -34114,6 +34225,8 @@ MonoBehaviour:
   enemy: {fileID: 0}
   life: 0
   armor: 0
+  epicCombat: 0
+  speed: 0
   door: {fileID: 1654220224}
 --- !u!65 &1702321270
 BoxCollider:
@@ -34197,7 +34310,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60142
+  m_Name: pb_Mesh119504
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -37804,7 +37917,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60864
+  m_Name: pb_Mesh120314
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -37978,7 +38091,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60018
+  m_Name: pb_Mesh119384
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -38249,6 +38362,8 @@ GameObject:
   - component: {fileID: 1797883356}
   - component: {fileID: 1797883359}
   - component: {fileID: 1797883360}
+  - component: {fileID: 1797883361}
+  - component: {fileID: 1797883362}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -38351,7 +38466,7 @@ MonoBehaviour:
   cameraSpeed: 2
   tips: {fileID: 1563635662}
   preset: {fileID: 234149274}
-  am: {fileID: 24100000, guid: 204c3751b5dab6d4b9a0633e30ea2bdf, type: 2}
+  mixer: {fileID: 24100000, guid: 204c3751b5dab6d4b9a0633e30ea2bdf, type: 2}
 --- !u!54 &1797883357
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -38425,6 +38540,112 @@ MonoBehaviour:
   knocking: {fileID: 8300000, guid: 083fd4094ae692a4985bdc18356fd234, type: 3}
   dying: {fileID: 8300000, guid: 63580eac747316444893f2f345fe84e0, type: 3}
   attack: {fileID: 8300000, guid: c51fe832d45513f40822dee6fb11373c, type: 3}
+  music_idle: {fileID: 8300000, guid: b02eebd7c952ed741a25d95fa5a31a13, type: 3}
+  music_combat: {fileID: 8300000, guid: 63fceec3dee13674db24bf66c72242aa, type: 3}
+--- !u!82 &1797883361
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797883351}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!81 &1797883362
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797883351}
+  m_Enabled: 1
 --- !u!1 &1825111721
 GameObject:
   m_ObjectHideFlags: 0
@@ -40413,6 +40634,8 @@ MonoBehaviour:
   enemy: {fileID: 7406041591327714878, guid: d045841856bfa6049913295687d24811, type: 3}
   life: 1
   armor: 0
+  epicCombat: 0
+  speed: 0
   door: {fileID: 2047817898}
 --- !u!65 &1892709024
 BoxCollider:
@@ -40526,6 +40749,8 @@ MonoBehaviour:
   enemy: {fileID: 0}
   life: 0
   armor: 0
+  epicCombat: 0
+  speed: 0
   door: {fileID: 684753093}
 --- !u!65 &1915020707
 BoxCollider:
@@ -40866,7 +41091,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60230
+  m_Name: pb_Mesh119622
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -41030,7 +41255,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60064
+  m_Name: pb_Mesh119430
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -41204,7 +41429,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60756
+  m_Name: pb_Mesh120190
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -41549,7 +41774,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60534
+  m_Name: pb_Mesh119956
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -41914,7 +42139,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60404
+  m_Name: pb_Mesh119812
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -42669,7 +42894,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60812
+  m_Name: pb_Mesh120262
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -42833,7 +43058,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60614
+  m_Name: pb_Mesh120046
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

@@ -7,13 +7,18 @@ public struct Combat {
     public readonly bool has_enemy;
     public readonly int life;
     public readonly int armor;
+    public readonly float speed;
+    public readonly bool epic;
+    
     public GameObject skin;
 
-    public Combat(GameObject enemy, int life, int armor) {
+    public Combat(GameObject enemy, int life, int armor, float speed, bool epic) {
         has_enemy = true;
         skin = enemy;
         this.life = life;
         this.armor = armor;
+        this.speed = speed;
+        this.epic = epic;
     }   
 }
 
@@ -58,6 +63,9 @@ public class PlayerCombatSystem : MonoBehaviour {
     IEnumerator Knocks() {
         configs.Look(door.transform.position);
         door.SetBool("knocks", true);
+        if (combat_info.has_enemy && combat_info.epic) {
+            configs.CombatAudio();
+        }
         configs.playSound(audios.knocking,  door.GetComponent<AudioSource>());
         yield return new WaitForSeconds(0.1f);
         
@@ -80,7 +88,6 @@ public class PlayerCombatSystem : MonoBehaviour {
     
     float value;
     float my_time;
-    float speed = 80;
     
     public Ghost_Enemy enemy;
     
@@ -121,7 +128,7 @@ public class PlayerCombatSystem : MonoBehaviour {
     
     IEnumerator UpdateSlider() {
         while(running_combat) {
-            slider.value = Mathf.PingPong(my_time*speed,100);
+            slider.value = Mathf.PingPong(my_time*combat_info.speed,100);
             yield return new WaitForSeconds(0.0003f);
         }
     }
