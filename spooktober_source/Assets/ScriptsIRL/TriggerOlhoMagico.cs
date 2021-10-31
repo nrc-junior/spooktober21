@@ -18,7 +18,33 @@ public class TriggerOlhoMagico : MonoBehaviour {
             player = col.GetComponent<Moving>();
             player.sit = true;
             GetComponent<EventController1>().Run(tomate.GetComponent<Animator>());
+        }
+
+        if (evento_final) {
+            player = col.GetComponent<Moving>();
+            player.sit = true;
             
+                
+            //diabo
+            if (StaticDataLoader.ending) {
+                GetComponent<EventController2>().Run();
+            }else {
+                print("texto do tomate final");
+            }
+
+        }
+    }
+
+    public void EventoFinal() {
+        evento_final = true;
+        
+        //diabo
+        if (StaticDataLoader.ending) {
+            diabo.SetActive(true);
+            tomate.SetActive(false);
+        }else {
+            diabo.SetActive(false);
+            tomate.SetActive(true);
         }
     }
 
@@ -27,9 +53,6 @@ public class TriggerOlhoMagico : MonoBehaviour {
         tomate.SetActive(true);
     }
     
-    public void CryTomate() {
-        tomate.GetComponent<Animator>().Play("cry");    
-    }
     
     public void ReleasePlayer() {
         player.sit = false;

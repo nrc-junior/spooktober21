@@ -58,12 +58,15 @@ public class Moving : MonoBehaviour {
             mov = new Vector3(dir.x, 0, dir.y);
 
             #endregion
-
+            
             #region animation
 
             walking = dir != Vector2.zero;
-            if (walking)
-            {
+            if (walking) {
+                if (!capturing_steps) {
+                    capturing_steps = true;
+                    StartCoroutine(StepPattern());
+                }
                 //walks
                 if (Time.time > time)
                 {
@@ -111,6 +114,21 @@ public class Moving : MonoBehaviour {
 
         #endregion
         
+    }
+
+    public SoundController audios;
+
+    bool capturing_steps;
+    IEnumerator StepPattern() {
+        int i = 0;
+        while (walking && !sit) {
+            float[] pitches = new float[]{0.92f, 1, 0.95f,1};
+            audios.PlaySound(audios.footstep, pitches[i++]);
+            if (i > 3) i = 0;
+            yield return new  WaitForSeconds(0.3f);
+            
+        }
+        capturing_steps = false;
     }
 
     public void disconect() {

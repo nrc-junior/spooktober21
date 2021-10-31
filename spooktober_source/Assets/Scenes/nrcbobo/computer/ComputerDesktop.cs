@@ -32,7 +32,9 @@ public class ComputerDesktop : MonoBehaviour {
     void OnEnable() {
         StaticDataLoader.event_minigame1_finished = true;
         StaticDataLoader.event_minigame2_finished = true;
-        
+        StaticDataLoader.event_minigame3_finished = true;
+        StaticDataLoader.ending = true;
+
         IRLdataController();
         if (player_move.sit) {
             tollbar_open = false;
@@ -226,9 +228,12 @@ public class ComputerDesktop : MonoBehaviour {
             if (StaticDataLoader.event_minigame2_finished) {
                 hungry_dog.id = -1;
                 trick_or_treat.id = 4;
+                KillDog();
                 TomatoKid();
                 
                 if (StaticDataLoader.event_minigame3_finished) {
+                    p_data.olho_magico.evento_tomate = false;
+                    p_data.olho_magico.EventoFinal();
                     trick_or_treat.id = -1;
                     // evento: batida na porta (satanas ou não)    
                     if (StaticDataLoader.ending) {
