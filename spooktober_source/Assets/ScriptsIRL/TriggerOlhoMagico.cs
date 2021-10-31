@@ -18,6 +18,7 @@ public class TriggerOlhoMagico : MonoBehaviour {
             player = col.GetComponent<Moving>();
             player.sit = true;
             GetComponent<EventController1>().Run(tomate.GetComponent<Animator>());
+            
         }
     }
 
@@ -33,8 +34,9 @@ public class TriggerOlhoMagico : MonoBehaviour {
     public void ReleasePlayer() {
         player.sit = false;
         if (evento_tomate) {
+            print("entrei");
             evento_tomate = false;
-            tomate.SetActive(false);
+            player.sit = false;
         }
         else if (evento_final) {
             SceneManager.LoadScene(5);
@@ -44,5 +46,6 @@ public class TriggerOlhoMagico : MonoBehaviour {
     
     void OnTriggerExit(Collider col) {
         corredor.SetActive(false);
+        tomate.SetActive(false);
     } 
 }

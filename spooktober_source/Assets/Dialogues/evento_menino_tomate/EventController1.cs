@@ -40,6 +40,7 @@ public class EventController1 : MonoBehaviour {
             }
             yield return null;
         }
+        GetComponent<TriggerOlhoMagico>().ReleasePlayer();
         yield return null;
     }
 }
