@@ -5,7 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class movement2d : MonoBehaviour
 {
+    public DialogueUI dialogueUI;
+    public DialogueObject dialogueObject;
+
     public float Speed ;
+    
     Rigidbody rb;
     Vector3 mov;
     Animator anime;
@@ -50,8 +54,17 @@ public class movement2d : MonoBehaviour
         yield return new WaitForSeconds(3);
         playing = false;
         yield return new WaitForSeconds(.5f);
+
+        dialogueUI.ShowDialogue(dialogueObject);
+
+        while (dialogueUI.IsOpen){
+            yield return new WaitForSeconds(0.3f);
+        }
+
         dog.GetComponent<Animator>().Play("explode");
+
         yield return new WaitForSeconds(4);
+        
         StaticDataLoader.event_minigame2_finished = true;
         SceneManager.LoadScene(1);
     }
