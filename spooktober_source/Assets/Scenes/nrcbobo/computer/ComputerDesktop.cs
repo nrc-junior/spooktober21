@@ -36,9 +36,10 @@ public class ComputerDesktop : MonoBehaviour {
         player_move.transform.GetChild(0).GetComponent<MeshRenderer>().material.color = c;
         player_move.on_chair.SetActive(true);
         
+        
         StaticDataLoader.event_minigame1_finished = true;
-        StaticDataLoader.event_minigame2_finished = true;
-        StaticDataLoader.event_minigame3_finished = true;
+        StaticDataLoader.event_minigame2_finished = false;
+        StaticDataLoader.event_minigame3_finished = false;
         StaticDataLoader.ending = true;
 
         IRLdataController();
@@ -78,10 +79,13 @@ public class ComputerDesktop : MonoBehaviour {
         }
     }
 
+    public GameObject blackouttrigger;
     public void SatorStartEvent() {
+        blackouttrigger.SetActive(true);
         StartCoroutine(Blackout());
     }
 
+    
     IEnumerator Blackout() {
         yield return new WaitForSeconds(2);
         sator_blackscreen.SetActive(false);
@@ -210,16 +214,15 @@ public class ComputerDesktop : MonoBehaviour {
 
     #region eventos
 
+    public GameObject trigger_diabo;
+    public GameObject trigger_tomate;
+    
     public SoundController sc;
     void TomatoKid() {
-        // falta batida na porta
         p_data.olho_magico.EventoTomate();
     }
+        
 
-    void DoorSlam() {
-    
-    }
-    
 
     #endregion
     
@@ -240,6 +243,7 @@ public class ComputerDesktop : MonoBehaviour {
             if (StaticDataLoader.event_minigame2_finished) {
                 hungry_dog.id = -1;
                 trick_or_treat.id = 4;
+                trigger_tomate.SetActive(true);
                 KillDog();
                 TomatoKid();
                 ExitComputer();
@@ -248,6 +252,8 @@ public class ComputerDesktop : MonoBehaviour {
                     p_data.olho_magico.evento_tomate = false;
                     p_data.olho_magico.EventoFinal();
                     ExitComputer();
+                    trigger_tomate.SetActive(false);
+                    trigger_diabo.SetActive(true);
                     trick_or_treat.id = -1;
                     // evento: batida na porta (satanas ou não)    
                     if (StaticDataLoader.ending) {

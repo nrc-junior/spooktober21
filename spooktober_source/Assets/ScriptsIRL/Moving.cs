@@ -157,7 +157,9 @@ public class Moving : MonoBehaviour {
 
     #region sator_blackout
     public GameObject blackout_equipament;
+    public GameObject trigger_blackout;
     public void Blackout() {
+        trigger_blackout.SetActive(true);
         on_trigger = false;
         blackout_event = true;
         StartCoroutine(EquipCandle());

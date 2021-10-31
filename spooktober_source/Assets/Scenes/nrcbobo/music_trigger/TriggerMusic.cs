@@ -6,7 +6,7 @@ public class TriggerMusic : MonoBehaviour {
   public bool repeatable;
   bool played;
   public AudioClip audio_clip;
-  [Range(0, 1)] public float volume = 1;
+  [Range(0, 1)] public float volume = GlobalMixer.volume;
   
   AudioSource audio_source;
 
