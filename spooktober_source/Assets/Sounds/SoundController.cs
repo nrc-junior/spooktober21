@@ -7,12 +7,18 @@ public class SoundController : MonoBehaviour
     public AudioClip lightswitch_on;
     public AudioClip lightswitch_off;
     public AudioClip lightswitch_all_off;
-    public AudioSource audio;
+    public AudioClip footstep;
+    public AudioSource soundController;
+    
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
-        audio = GetComponent<AudioSource>();
+        soundController = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
+    public void PlaySound(AudioClip clip, float volume = 1f)
+    {
+        soundController.PlayOneShot(clip, volume);
+    }
+
 }
