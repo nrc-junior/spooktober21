@@ -22,7 +22,6 @@ public class movement2d : MonoBehaviour
 
     bool running;
     void Update(){
-
         if (playing) {
             Vector3 dir = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 	    

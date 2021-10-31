@@ -16,6 +16,5 @@ public class GenericActivatorTrigger : MonoBehaviour {
 
    void OnTriggerExit(Collider col) {
       p.on_trigger = false;
-      p.trigger = null;
    }
 }

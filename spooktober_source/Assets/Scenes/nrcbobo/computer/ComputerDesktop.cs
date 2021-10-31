@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class ComputerDesktop : MonoBehaviour {
     //player inputs
     public Moving player_move;
+    public PlayerData p_data;  
     
     public GameObject sator; 
     public GameObject logoff;
@@ -29,6 +30,9 @@ public class ComputerDesktop : MonoBehaviour {
     public GameObject sator_warn;
         
     void OnEnable() {
+        StaticDataLoader.event_minigame1_finished = true;
+        StaticDataLoader.event_minigame2_finished = true;
+        
         IRLdataController();
         if (player_move.sit) {
             tollbar_open = false;
@@ -38,7 +42,11 @@ public class ComputerDesktop : MonoBehaviour {
             transform.parent.gameObject.SetActive(false);
         }
     }
-    
+
+    void Start() {
+        p_data = player_move.GetComponent<PlayerData>();
+    }
+
     public void TurnSator() {
         opened_sator = true;
         turn_on = !turn_on;
@@ -67,17 +75,20 @@ public class ComputerDesktop : MonoBehaviour {
     IEnumerator Blackout() {
         yield return new WaitForSeconds(2);
         sator_blackscreen.SetActive(false);
-        player_move.transform.GetComponent<PlayerData>().TurnLights(false);
+        p_data.TurnLights(false);
         player_move.Blackout();
         ExitComputer();
     }
 
     void KillFlowers() {
-        player_move.GetComponent<PlayerData>().SwitchPlants();
+        p_data.SwitchPlants();
     }
-    
-    
+
+    void KillDog() {
+        p_data.NapDog();
+    }
     #endregion
+
     #region connection
     [HideInInspector] public bool connection;
     public Sprite online;
@@ -187,6 +198,17 @@ public class ComputerDesktop : MonoBehaviour {
         sator_avaiable = true;
     }
 
+    #region eventos
+
+    void TomatoKid() {
+        // falta batida na porta
+        p_data.olho_magico.EventoTomate();
+    } 
+
+    
+
+    #endregion
+    
     #region minigames
     public GameObject played_warn;
     public Minigame rose_garden;
@@ -195,7 +217,7 @@ public class ComputerDesktop : MonoBehaviour {
     
     void IRLdataController() {
         if (StaticDataLoader.event_minigame1_finished) {
-            Destroy(player_move.GetComponent<PlayerData>().router_object);
+            Destroy(p_data.router_object);
             ConnectInternet();
             KillFlowers();
             rose_garden.id = -1;
@@ -204,7 +226,7 @@ public class ComputerDesktop : MonoBehaviour {
             if (StaticDataLoader.event_minigame2_finished) {
                 hungry_dog.id = -1;
                 trick_or_treat.id = 4;
-                // evento: batida na porta (menino tomate)
+                TomatoKid();
                 
                 if (StaticDataLoader.event_minigame3_finished) {
                     trick_or_treat.id = -1;

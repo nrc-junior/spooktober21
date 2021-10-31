@@ -4,18 +4,12 @@ using UnityEngine;
 
 
 
-public class EventController1 : MonoBehaviour
-{
+public class EventController1 : MonoBehaviour {
 
     public IInteractable Interactable {get; set;}
     public DialogueUI dialogueUI;
     public DialogueObject[] dialogueObject_player; // Uma array com todos os textos de fala do personagem player
     public DialogueObject[] dialogueObject_tomate; // A mesma coisa, mas agora são os textos de fala do tomate fofo
-
-    public void Start()
-    {
-        Run();
-    }
 
     public void Run()
     {

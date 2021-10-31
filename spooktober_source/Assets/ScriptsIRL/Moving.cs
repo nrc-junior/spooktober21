@@ -95,7 +95,7 @@ public class Moving : MonoBehaviour {
 
         #region triggers
             if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Space)) {
-                if (on_trigger) {
+                if (on_trigger && !GetComponent<PlayerData>().DuringEvent()) {
                     StartCoroutine(takeSeat());
                 }
 

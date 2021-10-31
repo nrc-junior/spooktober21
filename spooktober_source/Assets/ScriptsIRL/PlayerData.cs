@@ -8,6 +8,7 @@ public class PlayerData : MonoBehaviour {
     public GameObject router_object;
     public GameObject dead_plants;
     public GameObject alive_plants;
+    public TriggerOlhoMagico olho_magico;
     
     public void TurnLights(bool status) {
         foreach (var l in all_lights) {
@@ -15,7 +16,15 @@ public class PlayerData : MonoBehaviour {
         }
     }
 
+    public bool DuringEvent() {
+        return olho_magico.evento_tomate;
+    } 
     public void SwitchPlants() {
+        alive_plants.SetActive(false);
+        dead_plants.SetActive(true);
+    }
+    
+  public void NapDog() {
         alive_plants.SetActive(false);
         dead_plants.SetActive(true);
     }

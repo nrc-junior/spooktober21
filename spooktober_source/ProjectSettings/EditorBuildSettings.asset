@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ferida/minigames/1.unity
     guid: 89fbe66a0cc5c404a8beab0b22fd3f14
+  - enabled: 1
+    path: Assets/minigame2/minigame2.unity
+    guid: 6f7e825816b929f468810d0eb373f9a2
+  - enabled: 1
+    path: Assets/Scenes/nrcbobo/computer/Minigames/Ghost Hunter/Ghost_Hunter.unity
+    guid: 81581ce36a5677941b0bfcda04db8ab8
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 08e65ff63ab02504c840339e9f742424
   m_configObjects: {}
