@@ -30,6 +30,10 @@ public class ComputerDesktop : MonoBehaviour {
     public GameObject sator_warn;
         
     void OnEnable() {
+       //StaticDataLoader.event_minigame1_finished = true;
+       //StaticDataLoader.event_minigame2_finished = true;
+       //StaticDataLoader.event_minigame3_finished = false;
+        
         player_move.sit = true;
         Color c = Color.white;
         c.a = 0;
@@ -223,7 +227,8 @@ public class ComputerDesktop : MonoBehaviour {
     public Minigame rose_garden;
     public Minigame hungry_dog;
     public Minigame trick_or_treat;
-    
+
+    public bool closed_until_next_game;
     void IRLdataController() {
         if (StaticDataLoader.event_minigame1_finished) {
             Destroy(p_data.router_object);
@@ -232,13 +237,14 @@ public class ComputerDesktop : MonoBehaviour {
             rose_garden.id = -1;
             hungry_dog.id = 3;
             
-            if (StaticDataLoader.event_minigame2_finished) {
+            if (StaticDataLoader.event_minigame2_finished && !closed_until_next_game) {
                 hungry_dog.id = -1;
                 trick_or_treat.id = 4;
                 trigger_tomate.SetActive(true);
                 KillDog();
                 TomatoKid();
                 ExitComputer();
+                closed_until_next_game = true;
                 
                 if (StaticDataLoader.event_minigame3_finished) {
                     p_data.olho_magico.evento_tomate = false;

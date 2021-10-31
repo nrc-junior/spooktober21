@@ -49,6 +49,7 @@ public class TriggerOlhoMagico : MonoBehaviour {
             evento_tomate = false;
             player.sit = false;
         }
+        
         else if (evento_final) {
           Monitor.SetActive(true);
           end.Terminate();
