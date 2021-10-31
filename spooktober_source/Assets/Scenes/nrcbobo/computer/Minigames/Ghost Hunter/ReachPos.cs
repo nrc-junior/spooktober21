@@ -10,6 +10,7 @@ public class ReachPos : MonoBehaviour {
   public int armor;
 
   public bool epicCombat;
+  public bool super_epic_combat;
   public float speed;
   
   public Animator door;
@@ -21,7 +22,7 @@ public class ReachPos : MonoBehaviour {
       _cs.on_trigger = true;
       _cs.door = door;
       
-      Combat c = has_enemy ? new Combat(enemy,life, armor, speed, epicCombat): new Combat(); 
+      Combat c = has_enemy ? new Combat(enemy,life, armor, speed, epicCombat, super_epic_combat): new Combat(); 
       _cs.setCombat(c);
     }
   }

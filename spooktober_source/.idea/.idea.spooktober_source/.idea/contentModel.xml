@@ -73,6 +73,11 @@
                   <e p="Audio" t="Include">
                     <e p="AudioCollection.cs" t="Include" />
                   </e>
+                  <e p="Ending" t="Include">
+                    <e p="BadEnding.cs" t="Include" />
+                    <e p="GoodEnding.cs" t="Include" />
+                    <e p="LastDoor.cs" t="Include" />
+                  </e>
                   <e p="Ghost_Enemy.cs" t="Include" />
                   <e p="invisible_wall" t="Include">
                     <e p="Ending.cs" t="Include" />

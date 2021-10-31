@@ -9,14 +9,9 @@ public class Ending : MonoBehaviour {
 	void OnTriggerEnter(Collider col) {
 		if (col.tag == "Player") {
 			var p = col.GetComponent<PlayerCombatSystem>();
-			
-			if (p.has_secret_key && bad_ending) {
-				print("conquistou bad ending");
-			}
-
-			if (!p.has_secret_key && !bad_ending){
-				print("conquistou good ending");
-			}
+				StaticDataLoader.event_minigame3_finished = true;
+				StaticDataLoader.ending = p.has_secret_key;
+				Destroy(gameObject);
 		}
 	}
 }

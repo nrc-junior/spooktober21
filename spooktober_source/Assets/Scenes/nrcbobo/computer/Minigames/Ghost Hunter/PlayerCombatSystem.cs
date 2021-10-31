@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public struct Combat {
@@ -9,16 +10,20 @@ public struct Combat {
     public readonly int armor;
     public readonly float speed;
     public readonly bool epic;
+    public readonly bool superepic;
+    public bool enter_ending;
     
     public GameObject skin;
 
-    public Combat(GameObject enemy, int life, int armor, float speed, bool epic) {
+    public Combat(GameObject enemy, int life, int armor, float speed, bool epic, bool super_epic_combat = false, bool enterEnding = false) {
         has_enemy = true;
         skin = enemy;
+        superepic = super_epic_combat;
         this.life = life;
         this.armor = armor;
         this.speed = speed;
         this.epic = epic;
+        enter_ending = enterEnding;
     }   
 }
 
@@ -58,20 +63,31 @@ public class PlayerCombatSystem : MonoBehaviour {
         }        
     }
 
-    public void setCombat(Combat cb) => combat_info = cb;
+    public void setCombat(Combat cb, bool enter_ending = false) {
+        combat_info = cb;
+        if (enter_ending) {
+            combat_info.enter_ending = true;
+        }
+    } 
     
     IEnumerator Knocks() {
         configs.Look(door.transform.position);
         door.SetBool("knocks", true);
         if (combat_info.has_enemy && combat_info.epic) {
             configs.CombatAudio();
+            if (combat_info.superepic) {
+                configs.SuperCombatAudio();
+            }
         }
         configs.playSound(audios.knocking,  door.GetComponent<AudioSource>());
         yield return new WaitForSeconds(0.1f);
         
         door.SetBool("knocks", false);
         yield return new WaitForSeconds(3f);
-        
+        if (combat_info.enter_ending) {
+            StartCoroutine(FadeToBlack(true));
+            
+        }
         bool verify = combat_info.has_enemy ? enterCombat() : endCombat();
         if (verify) points++;
     }
@@ -223,7 +239,7 @@ public class PlayerCombatSystem : MonoBehaviour {
 
 
     public Image fade;
-    IEnumerator FadeToBlack() {
+    IEnumerator FadeToBlack(bool ending = false) {
         Color Black = Color.black;
         Black.a = 0;
 
@@ -232,6 +248,10 @@ public class PlayerCombatSystem : MonoBehaviour {
             Black.a = a / 100;
             fade.color = Black;
             yield return new WaitForSeconds(.01f);
+        }
+
+        if (ending) {
+            SceneManager.LoadScene(1);
         }
     }    
     

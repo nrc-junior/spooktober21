@@ -8,5 +8,6 @@ public class AudioCollection : MonoBehaviour {
   public AudioClip attack;
   public AudioClip music_idle;
   public AudioClip music_combat;
+  public AudioClip music_super_combat;
 
 }

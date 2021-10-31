@@ -232,9 +232,9 @@ public class ComputerDesktop : MonoBehaviour {
                     trick_or_treat.id = -1;
                     // evento: batida na porta (satanas ou não)    
                     if (StaticDataLoader.ending) {
-                        print("good ending");
-                    }else {
                         print("bad ending");
+                    }else {
+                        print("good ending");
                     }
                 }
             }

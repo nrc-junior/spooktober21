@@ -152,6 +152,14 @@ public class PlayerSettings : MonoBehaviour {
         StartCoroutine(MusicFade(idle_source, 1.5f,  GlobalMixer.volume));
     }
     
+    public void SuperCombatAudio() {
+        StartCoroutine(MusicFade(idle_source, 1.5f,  0));
+        idle_source.Stop();
+        idle_source.clip = audios.music_super_combat;
+        idle_source.Play();
+        StartCoroutine(MusicFade(idle_source, 1.5f,  GlobalMixer.volume));
+    }
+    
     public void IdleAudio() {
         idle_source.volume = 0;
         idle_source.clip = audios.music_idle;
