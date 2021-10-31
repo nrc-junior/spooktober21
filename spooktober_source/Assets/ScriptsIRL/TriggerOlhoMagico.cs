@@ -17,7 +17,7 @@ public class TriggerOlhoMagico : MonoBehaviour {
         if (evento_tomate) {
             player = col.GetComponent<Moving>();
             player.sit = true;
-            GetComponent<EventController1>().Run();
+            GetComponent<EventController1>().Run(tomate.GetComponent<Animator>());
         }
     }
 
