@@ -153,11 +153,7 @@ public class PlayerSettings : MonoBehaviour {
     }
     
     public void SuperCombatAudio() {
-        StartCoroutine(MusicFade(idle_source, 1.5f,  0));
-        idle_source.Stop();
-        idle_source.clip = audios.music_super_combat;
-        idle_source.Play();
-        StartCoroutine(MusicFade(idle_source, 1.5f,  GlobalMixer.volume));
+        CombatAudio(); //~removed
     }
     
     public void IdleAudio() {
@@ -167,14 +163,14 @@ public class PlayerSettings : MonoBehaviour {
         StartCoroutine(MusicFade(idle_source, 5,  GlobalMixer.volume  ));
     } 
         
-    public IEnumerator MusicFade(AudioSource audioSource, float duration, float targetVolume) {
+    public static IEnumerator MusicFade(AudioSource audioSource, float duration, float targetVolume) {
         float currentTime = 0;
         float start = audioSource.volume;
 
         while (currentTime < duration) {
             currentTime += Time.deltaTime;
             audioSource.volume = Mathf.Lerp(start, targetVolume, currentTime / duration);
-            yield return null;                                                  //duration
+            yield return null;                                               
         }
         yield break;
     }

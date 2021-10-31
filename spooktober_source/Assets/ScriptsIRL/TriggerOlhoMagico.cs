@@ -23,36 +23,24 @@ public class TriggerOlhoMagico : MonoBehaviour {
         if (evento_final) {
             player = col.GetComponent<Moving>();
             player.sit = true;
-            
-                
-            //diabo
-            if (StaticDataLoader.ending) {
-                GetComponent<EventController2>().Run();
-            }else {
-                print("texto do tomate final");
-            }
-
+            GetComponent<EventController2>().Run();
         }
     }
 
     public void EventoFinal() {
         evento_final = true;
-        
-        //diabo
-        if (StaticDataLoader.ending) {
             diabo.SetActive(true);
             tomate.SetActive(false);
-        }else {
-            diabo.SetActive(false);
-            tomate.SetActive(true);
-        }
     }
 
     public void EventoTomate() {
         evento_tomate = true;
         tomate.SetActive(true);
     }
-    
+
+
+    public GameObject Monitor;
+    public End end;
     
     public void ReleasePlayer() {
         player.sit = false;
@@ -62,11 +50,8 @@ public class TriggerOlhoMagico : MonoBehaviour {
             player.sit = false;
         }
         else if (evento_final) {
-            if (StaticDataLoader.ending) {
-                
-            }else {
-                
-            }
+          Monitor.SetActive(true);
+          end.Terminate();
         }
     }
     

@@ -35,12 +35,6 @@ public class ComputerDesktop : MonoBehaviour {
         c.a = 0;
         player_move.transform.GetChild(0).GetComponent<MeshRenderer>().material.color = c;
         player_move.on_chair.SetActive(true);
-        
-        
-        StaticDataLoader.event_minigame1_finished = true;
-        StaticDataLoader.event_minigame2_finished = false;
-        StaticDataLoader.event_minigame3_finished = false;
-        StaticDataLoader.ending = true;
 
         IRLdataController();
         if (player_move.sit) {
@@ -54,8 +48,6 @@ public class ComputerDesktop : MonoBehaviour {
 
     void Start() {
         p_data = player_move.GetComponent<PlayerData>();
-        
-        
     }
 
     public void TurnSator() {

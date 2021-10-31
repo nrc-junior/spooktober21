@@ -51,6 +51,7 @@
           <e p="StaticDataLoader.cs" t="Include" />
         </e>
         <e p="Scenes" t="Include">
+          <e p="End.cs" t="Include" />
           <e p="Menu" t="Include">
             <e p="effects" t="Include">
               <e p="Art" t="Include">
@@ -116,6 +117,7 @@
         </e>
         <e p="Sounds" t="Include">
           <e p="GlobalMixer.cs" t="Include" />
+          <e p="MenuTheme.cs" t="Include" />
           <e p="SoundController.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
