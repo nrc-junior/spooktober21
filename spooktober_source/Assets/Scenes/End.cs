@@ -6,7 +6,10 @@ using UnityEngine.SceneManagement;
 public class End : MonoBehaviour {
     public GameObject[] ui;
 
-
+    public void Start() {
+        Terminate();
+    }
+    
     public void Terminate() {
         StartCoroutine(ShowCredits());
     }

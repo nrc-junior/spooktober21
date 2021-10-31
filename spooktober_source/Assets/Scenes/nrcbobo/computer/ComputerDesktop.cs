@@ -66,7 +66,7 @@ public class ComputerDesktop : MonoBehaviour {
 
     public GameObject reminder;
     IEnumerator SatorMessage() {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(1.3f);
         if (turn_on) {
             reminder = system_notification;
         }
