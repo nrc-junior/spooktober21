@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ControlarLuz : MonoBehaviour
 {
-
+// commit que o nrc pediu
     public Light _luz;
     public bool _working = true; //Quando não tiver energia na casa, essa variável deve ser falsa
     private bool _estado = false;
