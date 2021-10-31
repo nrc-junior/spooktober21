@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class SlideController : MonoBehaviour
@@ -185,6 +186,6 @@ public class SlideController : MonoBehaviour
         }
         finished = true;
         print(finished);
-                    //?
+        SceneManager.LoadScene(1);
     }
 }

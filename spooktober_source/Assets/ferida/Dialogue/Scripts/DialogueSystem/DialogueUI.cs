@@ -85,9 +85,4 @@ public class DialogueUI : MonoBehaviour
         dialogueBox.SetActive(false);
         textLabel.text = string.Empty;
     }
-
-    // nrc: chamar esse metodo quando terminar o ultimo dialogo. 
-    void ReturnToIRL() { 
-        GetComponent<SceneManagement>().Load(0);
-    }
 }
