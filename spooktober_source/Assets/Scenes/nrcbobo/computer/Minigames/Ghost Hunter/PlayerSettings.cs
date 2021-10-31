@@ -174,7 +174,7 @@ public class PlayerSettings : MonoBehaviour {
         while (currentTime < duration) {
             currentTime += Time.deltaTime;
             audioSource.volume = Mathf.Lerp(start, targetVolume, currentTime / duration);
-            yield return null;
+            yield return null;                                                  //duration
         }
         yield break;
     }
