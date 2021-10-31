@@ -27,6 +27,7 @@ public class SlideController : MonoBehaviour
     public MusicController musicController; 
     public DialogueUI dialogueUI;
     public DialogueObject dialogueObject;
+    public bool finished = false; // Essa variável vai ser true assim que o player terminar o diálogo final
     private bool movimentation = true;
     void Start()
     {
@@ -171,7 +172,6 @@ public class SlideController : MonoBehaviour
     IEnumerator perdeu()
     {  
         movimentation = false;
-        print("ativou");
         musicController.Stop();
         StartCoroutine(CreatePlant(30));
         yield return new WaitForSeconds(14f);
@@ -180,7 +180,11 @@ public class SlideController : MonoBehaviour
         
         yield return new WaitForSeconds(3f);
         dialogueUI.ShowDialogue(dialogueObject);
+        while (dialogueUI.IsOpen){
+            yield return new WaitForSeconds(0.3f);
+        }
+        finished = true;
+        print(finished);
                     //?
     }
-
 }
