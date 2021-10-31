@@ -20,7 +20,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/nrcbobo/computer/Minigames/Ghost Hunter/Ghost_Hunter.unity
     guid: 81581ce36a5677941b0bfcda04db8ab8
-  - enabled: 1
-    path: Assets/Scenes/Credits.unity
-    guid: 08e65ff63ab02504c840339e9f742424
   m_configObjects: {}
