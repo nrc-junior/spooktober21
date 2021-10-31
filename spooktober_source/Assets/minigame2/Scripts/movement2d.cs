@@ -9,7 +9,10 @@ public class movement2d : MonoBehaviour
     public DialogueObject dialogueObject;
 
     public float Speed ;
-    
+
+    [SerializeField] private SoundController soundController;
+    public AudioClip boom;
+
     Rigidbody rb;
     Vector3 mov;
     Animator anime;
@@ -59,8 +62,10 @@ public class movement2d : MonoBehaviour
         while (dialogueUI.IsOpen){
             yield return new WaitForSeconds(0.3f);
         }
-
+        
         dog.GetComponent<Animator>().Play("explode");
+        yield return new WaitForSeconds(0.3f);
+        soundController.PlaySound(boom);
 
         yield return new WaitForSeconds(4);
         

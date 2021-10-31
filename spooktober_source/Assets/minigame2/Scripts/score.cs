@@ -9,7 +9,10 @@ public class score : MonoBehaviour {
     movement2d move;
     public Slider slider;
     public Image bar;
-    
+    [SerializeField] private SoundController soundController;
+    public AudioClip eat;
+    public AudioClip powerup;
+
     int pontos = 0;
 
     public void Start() {
@@ -26,11 +29,13 @@ public class score : MonoBehaviour {
         if (tag == "legume" || tag == "bala") {
             switch (tag) {
                 case "bala":
+                    soundController.PlaySound(eat);
                     pontos++;
                     break;
                 case "legume":
                     if (!buffado) {
                         buffado = true;
+                        soundController.PlaySound(powerup);
                         StartCoroutine(Buff());
                     }
                     break;
