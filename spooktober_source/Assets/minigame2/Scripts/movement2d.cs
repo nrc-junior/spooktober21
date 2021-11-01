@@ -35,12 +35,17 @@ public class movement2d : MonoBehaviour
             mov = new Vector3(dir.x,0,0);
 
             transform.localRotation =  dir.x < 0 ? transform.localRotation = Quaternion.Euler(new Vector3(0,180,0)) : Quaternion.Euler(new Vector3(0,0,0));
+            
             anime.SetFloat ("speed", Mathf.Abs(dir.x));
         }
     }
 
     void FixedUpdate(){
-        rb.MovePosition(rb.position + mov * Speed * Time.fixedDeltaTime);
+        if (playing) {
+            rb.MovePosition(rb.position + mov * Speed * Time.fixedDeltaTime);
+        }else {
+            rb.constraints = RigidbodyConstraints.FreezePosition;
+        }
     }
 
     public void Explode() {
@@ -52,10 +57,9 @@ public class movement2d : MonoBehaviour
 
     bool playing = true;
     IEnumerator ByeByeDog(GameObject dog) {
-        Speed = 0;
-        yield return new WaitForSeconds(3);
         playing = false;
-        yield return new WaitForSeconds(.5f);
+        Speed = 0;
+        yield return new WaitForSeconds(3.5f);
 
         dialogueUI.ShowDialogue(dialogueObject);
 
